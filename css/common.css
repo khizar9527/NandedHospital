@@ -1,0 +1,4018 @@
+ @font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Regular.eot");
+  src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.svg#Roboto-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url("../fonts/Roboto-Light.eot");
+  src: url("../fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Light.woff") format("woff"), url("../fonts/Roboto-Light.svg#Roboto-Light") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url("../fonts/Roboto-Medium.eot");
+  src: url("../fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.svg#Roboto-Medium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url("../fonts/Roboto-Bold.eot");
+  src: url("../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.svg#Roboto-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'indian_rupeeregular';
+  src: url("../fonts/indianrupeefont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 3, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+html {
+  font-size: 16px;
+}
+
+/* line 6, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: #262e30;
+  padding-top: 170px;
+}
+
+@media (max-width: 992px) {
+  /* line 6, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  body {
+    padding-top: 50px;
+    padding-bottom: 57px;
+  }
+}
+
+/* line 15, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+body.search_open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+/* line 19, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+body.search_open:after {
+  position: fixed;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+}
+
+/* line 30, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+body.body_fixed {
+  overflow: hidden;
+  position: fixed;
+}
+
+/* line 35, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+h1, h2, h3 {
+  color: #024594;
+}
+
+/* line 38, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+strong, b {
+  font-family: "Roboto-Bold", sans-sarif;
+}
+
+/* line 41, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+a {
+  outline: none;
+  color: #0B103F;
+}
+
+/* line 45, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+ul {
+  list-style: none;
+}
+
+/* line 48, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 52, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.btn-primary {
+  text-transform: uppercase;
+  color: #024594;
+  background-color: transparent;
+  border: solid 1px #024594;
+  padding: 11px 24px;
+  border-radius: 26px;
+  letter-spacing: 1px;
+  min-width: 180px;
+}
+
+/* line 61, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.btn-primary:hover {
+  color: #fff;
+  background-color: #024594;
+  border-color: #024594;
+}
+
+@media (max-width: 992px) {
+  /* line 52, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .btn-primary {
+    font-size: 0.875rem;
+    padding: 10px 15px;
+    min-width: 160px;
+  }
+}
+
+/* line 72, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.btn-primary-solid {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #024594;
+  border: solid 1px #024594;
+  padding: 11px 24px;
+  border-radius: 26px;
+  letter-spacing: 1px;
+  min-width: 180px;
+}
+
+/* line 81, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.btn-primary-solid:hover {
+  color: #fff;
+  background-color: #024594;
+  border-color: #024594;
+}
+
+@media (max-width: 992px) {
+  /* line 72, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .btn-primary-solid {
+    font-size: 0.875rem;
+    padding: 10px 15px;
+    min-width: 160px;
+  }
+}
+
+/* line 92, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.btn-link {
+  color: #044597;
+  text-transform: uppercase;
+  display: inline-block;
+  padding-right: 30px;
+  position: relative;
+  text-decoration: none;
+}
+
+/* line 99, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.btn-link:after {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  width: 10px;
+  height: 10px;
+  border-top: solid 1px #000;
+  border-right: solid 1px #000;
+  transform: rotate(45deg);
+  transition: all .4s;
+  content: "";
+}
+
+/* line 111, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.btn-link:hover {
+  text-decoration: none;
+}
+
+/* line 113, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.btn-link:hover:after {
+  right: 0px;
+}
+
+/* line 118, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.btn-link.text-white:after {
+  border-color: #fff;
+}
+
+/* line 123, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+/* line 127, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.bg-primary {
+  background-color: #024594 !important;
+}
+
+/* line 131, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.sticky-header.fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #fff;
+}
+
+/* line 141, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 992px) {
+  /* line 141, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  header {
+    box-shadow: none;
+  }
+}
+
+/* line 152, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .top_bar {
+  width: 100%;
+  background-color: #F8F9FD;
+}
+
+/* line 155, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .top_bar li {
+  margin: 0 40px 0 0;
+  position: relative;
+  /* setting_wrap starts */
+  /* setting_wrap starts */
+}
+
+/* line 158, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .top_bar li:last-child {
+  margin: 0;
+}
+
+/* line 161, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .top_bar li a {
+  color: #0B103F;
+  font-size: 0.813rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: all .3s;
+}
+
+/* line 168, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .top_bar li a svg {
+  margin-right: 5px;
+}
+
+/* line 170, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .top_bar li a svg path, header .top_bar li a svg circle, header .top_bar li a svg line {
+  transition: all .3s;
+}
+
+/* line 174, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .top_bar li a:hover, header .top_bar li a.active {
+  color: #024594;
+}
+
+/* line 177, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .top_bar li a:hover svg path, header .top_bar li a:hover svg circle, header .top_bar li a:hover svg line, header .top_bar li a.active svg path, header .top_bar li a.active svg circle, header .top_bar li a.active svg line {
+  stroke: #F68C42;
+}
+
+/* line 185, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .top_bar li a.login_link:hover svg path {
+  fill: #F68C42;
+  stroke: none;
+}
+
+/* line 193, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .top_bar li a.profile-link {
+  padding-right: 20px;
+  position: relative;
+}
+
+/* line 197, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .top_bar li a.profile-link:after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  margin-top: -7px;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  border-top: solid 1px #0B103F;
+  border-right: solid 1px #0B103F;
+  transform: rotate(135deg);
+}
+
+/* line 212, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .top_bar li .setting_wrap {
+  display: none;
+  position: absolute;
+  background: #e76d24;
+  color: #fff;
+  width: 250px;
+  left: 0px;
+  top: 28px;
+  padding: 15px;
+  margin-right: -250px;
+  z-index: 9999;
+}
+
+/* line 223, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .top_bar li .setting_wrap ul {
+  padding: 0;
+}
+
+/* line 224, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .top_bar li .setting_wrap ul li, header .top_bar li .setting_wrap ul a {
+  font-size: 14px;
+}
+
+/* line 225, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .top_bar li .setting_wrap ul li {
+  margin: 0;
+}
+
+/* line 226, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .top_bar li .setting_wrap ul a {
+  color: #fff;
+  display: inline-block;
+}
+
+/* line 231, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .top_bar li[data-toggle="dropdown"] {
+  padding-right: 20px;
+  position: relative;
+}
+
+/* line 234, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .top_bar li[data-toggle="dropdown"]:after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  margin-top: -7px;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  border-top: solid 1px #0B103F;
+  border-right: solid 1px #0B103F;
+  transform: rotate(135deg);
+}
+
+/* line 248, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .top_bar li .dropdown-menu {
+  padding: 0;
+}
+
+/* line 250, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .top_bar li .dropdown-menu a {
+  padding: 7px 15px;
+  border-bottom: solid 1px #f5f5f5;
+  font-family: "Roboto-Light", sans-sarif;
+  font-size: .875rem;
+}
+
+@media (max-width: 992px) {
+  /* line 152, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  header .top_bar {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  /* line 263, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  header .navbar {
+    position: fixed;
+    width: 100%;
+    min-height: 50px;
+    top: 0;
+    z-index: 10;
+    background: #F9FBFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  }
+  /* line 272, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  header .navbar .navbar-brand {
+    margin-left: calc(50% - 80px);
+  }
+  /* line 274, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  header .navbar .navbar-brand img {
+    max-width: 160px;
+  }
+  /* line 278, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  header .navbar .navbar-toggler {
+    position: fixed;
+    left: 0;
+    top: 0px;
+    width: 50px;
+    height: 50px;
+  }
+  /* line 285, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  header .navbar .btn_search {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+  }
+}
+
+/* line 293, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .navbar-toggler {
+  border: none;
+  outline: none;
+  border-radius: 0px;
+  border-right: solid 1px rgba(170, 169, 173, 0.2);
+}
+
+/* line 298, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .navbar-toggler .navbar-toggler-icon {
+  background-image: none;
+  position: relative;
+  margin-top: 7px;
+}
+
+/* line 302, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .navbar-toggler .navbar-toggler-icon i {
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background: #024594;
+  left: 0;
+}
+
+/* line 308, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .navbar-toggler .navbar-toggler-icon i:nth-child(1) {
+  top: 0;
+}
+
+/* line 311, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .navbar-toggler .navbar-toggler-icon i:nth-child(2) {
+  top: 8px;
+}
+
+/* line 314, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .navbar-toggler .navbar-toggler-icon i:nth-child(3) {
+  top: 16px;
+}
+
+/* line 322, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .contact_nav {
+  align-items: center;
+}
+
+/* line 324, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .contact_nav li {
+  padding: 0 15px;
+}
+
+/* line 326, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .contact_nav li:last-child {
+  position: relative;
+}
+
+/* line 328, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .contact_nav li:last-child:after {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -12px;
+  width: 1px;
+  height: 25px;
+  content: "";
+  background: rgba(4, 69, 151, 0.2);
+  display: none;
+}
+
+/* line 339, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .contact_nav li a {
+  font-size: 0.625rem;
+  color: #0B103F;
+  display: flex;
+  align-items: center;
+  line-height: 1.2;
+  width: 110px;
+  text-align: left;
+}
+
+/* line 347, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .contact_nav li a img {
+  margin-right: 10px;
+  margin-bottom: 5px;
+  max-width: 30px;
+}
+
+/* line 354, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .contact_nav .callus-item {
+  position: relative;
+  min-height: 80px;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  transition: all .2s;
+}
+
+/* line 362, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .contact_nav .callus-item ul {
+  /*position: absolute;
+  right: 120px;
+  width: 450px;
+  padding-right: 30px;
+  top: 0;
+  display: none; background: #F2F2F2;*/
+  padding: 0;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;  
+  z-index: 10;
+}
+
+/* line 375, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .contact_nav .callus-item ul:after {
+  position: absolute;
+  right: 20px;
+  top: 28px;
+  width: 1px;
+  height: 25px;
+  content: "";
+  background: #CCDAEA;
+  display: none;
+}
+
+/* line 384, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .contact_nav .callus-item ul li {
+  font-size: .75rem;
+  color: #024594;
+  padding: 0 5px;
+}
+
+/* line 387, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .contact_nav .callus-item ul li a {
+  display: inline-block;
+  font-size: .75rem;
+  font-family: "Roboto-Medium", sans-sarif;
+  color: #024594;
+  width: auto;
+}
+header .navbar .contact_nav .callus-item ul li span{ 
+  color: #F68C42;
+  width: auto;
+}
+
+/* line 395, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+/* header .navbar .contact_nav .callus-item ul li:last-child:after {
+  display: none;
+} */
+
+/* line 401, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+/* header .navbar .contact_nav .callus-item:hover {
+  background: #F2F2F2;
+} */
+
+/* line 404, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+/* header .navbar .contact_nav .callus-item:hover:last-child:after {
+  display: none;
+} */
+
+/* line 408, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+/* header .navbar .contact_nav .callus-item:hover ul {
+  display: flex;
+} */
+
+@media (max-width: 992px) {
+  /* line 322, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  header .navbar .contact_nav {
+    display: none;
+  }
+}
+
+/* line 419, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .main-nav {
+  background-color: #F8F9FD;
+  position: relative;
+}
+
+/* line 422, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .main-nav:after {
+  position: absolute;
+  height: 54px;
+  width: 50%;
+  right: 0;
+  top: 0;
+  content: "";
+  background-color: #F68C42;
+  z-index: 0;
+}
+
+/* line 432, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .main-nav .navbar-nav {
+  width: calc(100% - 83px);
+  position: relative;
+  justify-content: space-between;
+}
+
+/* line 438, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .main-nav .navbar-nav .nav-item .nav-link {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  position: relative;
+}
+
+/* line 445, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .main-nav .navbar-nav .nav-item .nav-link.active {
+  color: #F68C42 !important;
+  font-family: "Roboto-Bold", sans-sarif;
+}
+
+/* line 448, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .main-nav .navbar-nav .nav-item .nav-link.active:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  background: #F68C42;
+  width: 100%;
+  content: "";
+}
+
+/* line 458, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .main-nav .navbar-nav .nav-item .nav-link.dropdown-toggle {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #0B103F;
+}
+
+/* line 462, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .main-nav .navbar-nav .nav-item .nav-link.dropdown-toggle:after {
+  border: none;
+  width: 9px;
+  height: 9px;
+  border-bottom: solid 1px #0B103F;
+  border-left: solid 1px #0B103F;
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 992px) {
+  /* line 438, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  header .navbar .main-nav .navbar-nav .nav-item .nav-link {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: .875rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* line 480, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .main-nav .navbar-nav .nav-item:first-child .nav-link {
+  padding-left: 0;
+}
+
+/* line 484, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .main-nav .navbar-nav .nav-item.dropdown {
+  position: unset;
+}
+
+/* line 486, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .main-nav .navbar-nav .nav-item.dropdown .dropdown-menu {
+  top: 50px;
+  width: 100%;
+  /* min-height: 180px; */
+}
+
+/* line 492, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .main-nav .navbar-nav .nav-item.dropdown .dropdown-menu li a {
+  display: block;
+  border-bottom: solid 1px #f5f5f5;
+  margin-bottom: 7px;
+  padding-bottom: 7px;
+  text-decoration: none;
+  font-family: "Roboto-Light", sans-sarif;
+  font-size: .875rem;
+}
+
+@media (max-width: 992px) {
+  /* line 486, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  header .navbar .main-nav .navbar-nav .nav-item.dropdown .dropdown-menu {
+    border: none;
+    border-radius: 0px;
+    min-height: inherit;
+  }
+  /* line 506, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  header .navbar .main-nav .navbar-nav .nav-item.dropdown .dropdown-menu ul {
+    padding-left: 0;
+  }
+  /* line 509, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  header .navbar .main-nav .navbar-nav .nav-item.dropdown .dropdown-menu ul li a {
+    padding-left: 15px;
+    border: none;
+  }
+}
+
+@media (max-width: 992px) {
+  /* line 518, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  header .navbar .main-nav .navbar-nav .nav-item.dropdown .nav-link {
+    position: relative;
+  }
+  /* line 520, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  header .navbar .main-nav .navbar-nav .nav-item.dropdown .nav-link:after {
+    position: absolute;
+    right: 15px;
+    top: 13px;
+  }
+}
+
+/* line 528, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .main-nav .navbar-nav .nav-item.show_on_mobile {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  /* line 436, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  header .navbar .main-nav .navbar-nav .nav-item {
+    margin-right: 0;
+    border-bottom: solid 1px rgba(4, 69, 151, 0.3);
+  }
+  /* line 534, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  header .navbar .main-nav .navbar-nav .nav-item.show_on_mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 992px) {
+  /* line 432, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  header .navbar .main-nav .navbar-nav {
+    width: 100%;
+  }
+}
+
+/* line 544, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .main-nav .container {
+  position: relative;
+  z-index: 1;
+  background-color: #F8F9FD;
+}
+
+/* line 548, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .main-nav >.container:after {
+  position: absolute;
+  right: 0;
+  width: 15px;
+  content: "";
+  height: 54px;
+  background: #F68C42;
+}
+
+@media (max-width: 992px) {
+  /* line 548, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  header .navbar .main-nav .container:after {
+    display: none;
+  }
+}
+
+/* line 560, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .main-nav .show_on_mobile {
+  display: none;
+}
+
+/* line 563, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .main-nav .social_links_contact {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+}
+
+/* line 569, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .main-nav .social_links_contact .emergency_contact_mob {
+  padding: 5px 0 7px;
+  text-align: center;
+  font-size: .875rem;
+}
+
+/* line 573, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .main-nav .social_links_contact .emergency_contact_mob p {
+  margin: 0;
+}
+
+/* line 576, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .main-nav .social_links_contact .emergency_contact_mob .contact_no {
+  font-size: 1rem;
+  font-family: "Roboto-Bold", sans-sarif;
+  color: #044597;
+}
+
+/* line 580, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .main-nav .social_links_contact .emergency_contact_mob .contact_no a {
+  color: #044597;
+  text-decoration: none;
+}
+
+/* line 587, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .main-nav .social_links_contact .social_icons {
+  text-align: center;
+}
+
+/* line 589, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .main-nav .social_links_contact .social_icons a {
+  margin: 0 7px;
+  display: inline-block;
+}
+
+/* line 592, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .navbar .main-nav .social_links_contact .social_icons a svg {
+  height: 16px;
+  width: auto;
+}
+
+@media (max-width: 992px) {
+  /* line 419, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  header .navbar .main-nav {
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+    top: 50px;
+    padding-bottom: 225px;
+    width: 100%;
+    background-image: url(../images/icons/mob_menu_bg_plus.png);
+    background-repeat: no-repeat;
+    background-position: 120px 0;
+  }
+  /* line 600, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  header .navbar .main-nav .show_on_mobile {
+    display: block;
+  }
+  /* line 612, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  header .navbar .main-nav:after {
+    display: none;
+  }
+  /* line 615, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  header .navbar .main-nav .container {
+    background-color: transparent;
+  }
+  /* line 618, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  header .navbar .main-nav:before {
+    position: fixed;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    content: "";
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    height: 5px;
+  }
+}
+
+/* line 632, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .btn_search button {
+  width: 83px;
+  height: 54px;
+  border: none;
+  background: #044597;
+  box-shadow: none;
+}
+
+/* line 638, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .btn_search button:focus {
+  outline: none;
+}
+
+/* line 643, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .btn_search.show_on_desktop button {
+  border-right: solid 2px #F8F9FD;
+}
+
+@media (max-width: 992px) {
+  /* line 642, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  header .btn_search.show_on_desktop {
+    display: none;
+  }
+}
+
+/* line 651, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .btn_search.show_on_mobile {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  /* line 651, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  header .btn_search.show_on_mobile {
+    display: block;
+  }
+}
+
+/* line 656, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .btn_search.show_on_mobile button {
+  width: 50px;
+  height: 50px;
+}
+
+/* line 659, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .btn_search.show_on_mobile button svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* line 666, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .search_box {
+  display: none;
+  background: #044597;
+  padding: 35px 0;
+}
+
+/* line 671, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .search_box .input-group input.form-control {
+  height: 60px;
+  color: #024594;
+  font-size: 1.25rem;
+  border-radius: 0px;
+  border: none;
+}
+
+/* line 677, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .search_box .input-group input.form-control::-webkit-input-placeholder {
+  color: #024594;
+}
+
+/* line 678, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .search_box .input-group input.form-control:-ms-input-placeholder {
+  color: #024594;
+}
+
+/* line 679, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .search_box .input-group input.form-control::placeholder {
+  color: #024594;
+}
+
+/* line 681, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .search_box .input-group .input-group-append {
+  position: relative;
+  margin: 0;
+}
+
+/* line 684, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .search_box .input-group .input-group-append:after {
+  position: absolute;
+  width: 1px;
+  height: 36px;
+  content: "";
+  background: #0B103F;
+  opacity: 20%;
+  right: 0;
+  top: 12px;
+  z-index: 10;
+}
+
+/* line 696, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .search_box .input-group .input-group-append:last-child:after {
+  display: none;
+}
+
+/* line 700, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .search_box .input-group .input-group-append button {
+  border-radius: 0px;
+  background: #fff;
+  border: none;
+  outline: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-shadow: none;
+}
+
+/* line 708, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .search_box .input-group .input-group-append button:focus {
+  outline: none;
+}
+
+/* line 714, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .search_box .search_listing {
+  margin-top: 30px;
+}
+
+/* line 716, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .search_box .search_listing h2 {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-size: 1.125rem;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 24px;
+}
+
+/* line 723, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .search_box .search_listing h2:after {
+  position: absolute;
+  left: -15px;
+  bottom: 0;
+  width: 36px;
+  height: 2px;
+  background: #F68C42;
+  content: "";
+}
+
+/* line 733, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .search_box .search_listing ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 315px;
+}
+
+/* line 739, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .search_box .search_listing ul li {
+  margin-right: 5px;
+  margin-bottom: 9px;
+}
+
+/* line 742, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .search_box .search_listing ul li a {
+  min-width: 95px;
+  display: inline-block;
+  text-align: center;
+  border: solid 1px rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 0.688rem;
+  border-radius: 15px;
+  padding: 6px 15px;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+/* line 753, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+header .search_box .search_listing ul li a:hover {
+  border-color: #fff;
+}
+
+@media (max-width: 992px) {
+  /* line 666, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  header .search_box {
+    padding-top: 65px;
+  }
+  /* line 763, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  header .search_box .input-group input.form-control {
+    font-size: .875rem;
+    height: 43px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  /* line 771, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  header .search_box .input-group .input-group-append button {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 774, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  header .search_box .input-group .input-group-append button svg {
+    max-width: 17px;
+  }
+  /* line 778, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  header .search_box .input-group .input-group-append:after {
+    top: 10px;
+    height: 24px;
+  }
+  /* line 784, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  header .search_box .search_listing {
+    padding-left: 15px;
+  }
+  /* line 786, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  header .search_box .search_listing ul {
+    margin-bottom: 30px;
+  }
+  /* line 791, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  header .search_box .search_listing .row .col-md-6:last-child ul {
+    margin-bottom: 0;
+  }
+}
+
+/* line 802, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.section-pt {
+  padding-top: 60px;
+}
+
+@media (max-width: 992px) {
+  /* line 802, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .section-pt {
+    padding-top: 40px;
+  }
+}
+
+/* line 808, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.section-pb {
+  padding-bottom: 60px;
+}
+
+@media (max-width: 992px) {
+  /* line 808, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .section-pb {
+    padding-bottom: 40px;
+  }
+}
+
+/* line 814, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.section-py {
+  padding: 70px 0;
+}
+
+@media (max-width: 992px) {
+  /* line 814, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .section-py {
+    padding: 40px 0;
+  }
+}
+
+/* line 819, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.section-py.section-bg {
+  background-color: #F8F9FD;
+}
+
+/* line 823, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.section-heading {
+  font-size: 1.75rem;
+}
+
+/* line 825, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.section-heading.btm_bar {
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+/* line 829, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.section-heading.btm_bar:after {
+  position: absolute;
+  left: -30px;
+  bottom: 0;
+  width: 46px;
+  content: "";
+  height: 2px;
+  background: #F68C42;
+}
+
+@media (max-width: 992px) {
+  /* line 829, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .section-heading.btm_bar:after {
+    left: -20px;
+  }
+}
+
+@media (max-width: 992px) {
+  /* line 823, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .section-heading {
+    font-size: 1.375rem;
+  }
+}
+
+/* line 847, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.arrowhead {
+  display: flex;
+}
+
+@media (max-width: 992px) {
+  /* line 847, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .arrowhead {
+    padding-top: 20px;
+  }
+}
+
+/* line 851, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.arrowhead .back_arrow {
+  margin-right: 10px;
+}
+
+/* line 857, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.custom_select_wrap {
+  position: relative;
+}
+
+/* line 859, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.custom_select_wrap select {
+  width: 100%;
+  border: solid 1px #d9d9d9;
+  height: auto;
+  background: none;
+  font-size: 1rem;
+  border-radius: 6px;
+
+  line-height: normal;
+}
+
+/* line 869, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.custom_select_wrap:after {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  margin-top: -8px;
+  pointer-events: none;
+  border: solid #fff;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  content: "";
+}
+
+/* common accordion */
+/* line 888, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.common_accordion .card {
+  margin-bottom: 17px;
+  border: none;
+  background-color: transparent;
+}
+
+/* line 892, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.common_accordion .card .card-header {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+/* line 896, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.common_accordion .card .card-header h5 {
+  padding: 0;
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+/* line 900, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.common_accordion .card .card-header h5 span {
+  font-size: 1rem;
+  display: inline-block;
+  position: relative;
+  padding-left: 7px;
+}
+
+/* line 905, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.common_accordion .card .card-header h5 span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #024594;
+}
+
+@media (max-width: 992px) {
+  /* line 900, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .common_accordion .card .card-header h5 span {
+    display: block;
+    padding-left: 0;
+  }
+  /* line 917, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .common_accordion .card .card-header h5 span::before {
+    display: none;
+  }
+}
+
+/* line 922, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.common_accordion .card .card-header h5 a {
+  display: block;
+  padding: 20px 30px 0px 30px;
+  color: #024594;
+  text-decoration: none;
+  font-family: "Roboto-Medium", sans-sarif;
+  border: solid 1px #f68c42;
+  border-radius: 8px 8px 0 0;
+  border-bottom: none;
+  position: relative;
+  transition: all .3s;
+  background-color: #fff;
+}
+
+/* line 934, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.common_accordion .card .card-header h5 a.collapsed {
+  font-family: "Roboto", sans-serif;
+  border: solid 1px #d3d5e0;
+  border-radius: 8px;
+  background-color: transparent;
+  padding-bottom:20px;
+}
+
+/* line 939, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.common_accordion .card .card-header h5 a.collapsed:after {
+  transform: rotate(45deg);
+  top: 15px;
+}
+
+/* line 944, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.common_accordion .card .card-header h5 a:after {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  width: 20px;
+  height: 20px;
+  content: "";
+  border-bottom: solid 2px #0B103F;
+  border-right: solid 2px #0B103F;
+  transform: rotate(-135deg);
+  transition: all .3s;
+}
+
+/* line 959, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.common_accordion .card .card-body {
+  padding: 20px 30px;
+  border: solid 1px #d3d5e0;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  background-color: #fff;
+}
+
+@media (max-width: 992px) {
+  /* line 959, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .common_accordion .card .card-body {
+    padding: 15px;
+  }
+}
+
+/* line 970, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.common_accordion .card .collapse.show .card-body {
+  border-color: #f68c42;
+}
+
+@media (max-width: 992px) {
+  /* line 978, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .common_accordion .card .card-header h5 {
+    font-size: 1rem;
+  }
+  /* line 980, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .common_accordion .card .card-header h5 span {
+    font-size: 0.688rem;
+    font-family: "Roboto", sans-serif;
+  }
+  /* line 984, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .common_accordion .card .card-header h5 a {
+    padding-right: 45px;
+  }
+  /* line 986, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .common_accordion .card .card-header h5 a:after {
+    width: 12px;
+    height: 12px;
+  }
+  /* line 991, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .common_accordion .card .card-header h5 a.collapsed:after {
+    top: 20px;
+  }
+}
+
+/* line 1004, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.common_accordion.without_border .card .card-header h5 a {
+  padding-left: 0;
+  border: none;
+}
+
+/* line 1008, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.common_accordion.without_border .card .card-header h5 a.collapsed {
+  border: none;
+  border-bottom: solid 1px #024594;
+  border-radius: 0px;
+}
+
+/* line 1016, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.common_accordion.without_border .card .card-body {
+  border: none;
+  border-radius: 0px;
+  border-bottom: solid 1px #F68C42;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 1030, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.common_accordion.accordion_plus_minus .card .card-header h5 a:after {
+  border: none;
+  content: "\2013";
+  transform: rotate(0deg);
+  right: 0;
+  font-size: 2rem;
+  font-family: "Roboto-Light", sans-sarif;
+  top: 10px;
+}
+
+/* line 1040, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.common_accordion.accordion_plus_minus .card .card-header h5 a.collapsed:after {
+  content: "+";
+}
+
+/* common card box*/
+/* line 1052, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.common_card {
+  padding: 16px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+
+/* line 1059, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.common_card.doctor_card {
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+/* line 1063, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.common_card.doctor_card figure {
+  position: absolute;
+  left: 11px;
+  top: 20px;
+}
+
+/* line 1068, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.common_card.doctor_card .card_content {
+  padding-left: 105px;
+}
+
+/* line 1070, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.common_card.doctor_card .card_content h3 {
+  font-size: .875rem;
+  text-transform: uppercase;
+  color: #0B103F;
+  margin-bottom: 20px;
+}
+
+/* line 1075, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.common_card.doctor_card .card_content h3 span {
+  color: #0D1355;
+  opacity: 50%;
+  font-size: .75rem;
+  text-transform: none;
+}
+
+/* line 1082, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.common_card.doctor_card .card_content .btn {
+  font-size: .875rem;
+  padding: 10px 20px;
+  margin-bottom: 5px;
+}
+
+/* line 1087, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.common_card.doctor_card .card_content .discount {
+  color: #0D1355;
+  opacity: 50%;
+  font-size: .75rem;
+}
+
+@media (max-width: 992px) {
+  /* line 1094, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .common_card.doctor_card .card_content {
+    padding-left: 95px;
+  }
+}
+
+/* line 1101, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.webrupee {
+  font-family: "indian_rupeeregular";
+}
+
+/* footer */
+/* line 1107, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+footer {
+  padding: 44px 0 0;
+  background: #F9FBFF;
+}
+
+/* line 1110, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+footer h6, footer h6 a.desktop-drop-footer, footer h6 a.device-drop-footer {
+  color: #0B103F;
+  margin-bottom: 20px;
+  font-family: "Roboto-Medium", sans-sarif;
+  font-size: inherit;
+}
+
+.body_contrast1 footer h6 a.desktop-drop-footer, .body_contrast1 footer h6 a.device-drop-footer { color: #ffffff;}
+
+/* line 1114, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+footer h6.other_links_heading {
+  margin-bottom: 0;
+}
+
+/* line 1118, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+footer ul {
+  margin-bottom: 40px;
+}
+
+/* line 1121, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+footer a {
+  color: #0B103F;
+  font-family: "Roboto-Light", sans-sarif;
+  font-size: 0.875rem;
+}
+footer .linkWithLogo img{ width: 30px; margin: 0px 8px 8px 0px;}
+/* line 1127, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+footer .download_links li {
+  display: flex;
+}
+
+/* line 1129, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+footer .download_links li:first-child {
+  width: 100%;
+  display: block;
+  font-family: "Roboto-Medium", sans-sarif;
+  color: #0B103F;
+  margin-bottom: 10px;
+}
+
+/* line 1136, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+footer .download_links li a {
+  margin-right: 10px;
+}
+
+/* line 1138, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+footer .download_links li a:last-child {
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  /* line 1142, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  footer .download_links li img {
+    max-height: 28px;
+  }
+}
+
+@media (max-width: 575px) {
+  /* line 1142, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  footer .download_links li img {
+    max-height: 100%;
+    height: 44px;
+  }
+}
+
+/* line 1153, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+footer .follow_links {
+  margin-bottom: 0;
+}
+
+/* line 1155, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+footer .follow_links li {
+  display: flex;
+}
+
+/* line 1157, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+footer .follow_links li:first-child {
+  width: 100%;
+  display: block;
+  font-family: "Roboto-Medium", sans-sarif;
+  color: #0B103F;
+  margin-bottom: 10px;
+}
+
+/* line 1164, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+footer .follow_links li a {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+/* line 1167, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+footer .follow_links li a:last-child {
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  /* line 1164, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  footer .follow_links li a {
+    margin-right: 20px;
+  }
+}
+
+/* line 1173, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+footer .follow_links li a svg {
+  transform: scale(0.9);
+  transition: all .4s;
+}
+
+/* line 1178, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+footer .follow_links li a:hover svg {
+  transform: scale(1);
+}
+
+/* line 1187, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+footer .alone_links a {
+  font-family: "Roboto-Medium", sans-sarif;
+  font-size: 1rem;
+}
+
+/* line 1193, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+footer .copyright {
+  padding: 0px 40px 20px;
+  font-family: "Roboto-Light", sans-sarif;
+  font-size: .875rem;
+  color: #0B103F;
+}
+
+/* line 1198, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+footer .copyright hr {
+  border-color: #AAA9AD;
+  opacity: .4;
+}
+
+/* line 1202, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+footer .copyright p {
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  /* line 1193, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  footer .copyright {
+    padding: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  /* line 1107, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  footer {
+    padding-bottom: 15px;
+  }
+}
+
+/* line 1214, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+footer .device-drop-footer {
+  display: none;
+}
+
+/* line 1215, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+footer .device-drop-footer.others {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  /* line 1217, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .collapse.dont-collapse-md {
+    display: block;
+    height: auto !important;
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* line 1224, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  footer .desktop-drop-footer {
+    display: none;
+  }
+  /* line 1227, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  footer .device-drop-footer {
+    display: inline-block;
+    position: relative;
+    padding-right: 20px;
+  }
+  /* line 1231, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  footer .device-drop-footer.has-children:after {
+    position: absolute;
+    right: 0;
+    top: 3px;
+    border: none;
+    width: 9px;
+    height: 9px;
+    border-bottom: solid 1px #0B103F;
+    border-left: solid 1px #0B103F;
+    transform: rotate(-45deg);
+    content: "";
+  }
+  footer h6{
+    margin-bottom: 5px;
+  }
+  footer h6 a.device-drop-footer{
+    margin-bottom: 0;
+  }
+}
+
+/* line 1247, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.mob_fixed_footer {
+  display: none;
+  background: #044597;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+/* line 1255, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.mob_fixed_footer ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+/* line 1261, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.mob_fixed_footer ul li {
+  padding: 8px 10px;
+  position: relative;
+}
+
+/* line 1264, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.mob_fixed_footer ul li:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.23);
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+
+/* line 1274, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.mob_fixed_footer ul li:last-child:after {
+  display: none;
+}
+
+/* line 1278, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.mob_fixed_footer ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.438rem;
+  text-align: center;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+/* line 1285, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.mob_fixed_footer ul li a span {
+  display: inline-block;
+  width: 100%;
+  margin-top: 6px;
+}
+
+@media (max-width: 992px) {
+  /* line 1247, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .mob_fixed_footer {
+    display: block;
+  }
+}
+
+/* line 1296, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.mob_fixed_footer .dropdown-menu.show {
+  background: #044597;
+  padding: 0;
+}
+
+/* line 1299, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.mob_fixed_footer .dropdown-menu.show a.dropdown-item {
+  border-bottom: solid 1px rgba(255, 255, 255, 0.23);
+  text-align: left;
+  padding: 10px;
+  font-size: .75rem;
+}
+
+/* line 1304, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.mob_fixed_footer .dropdown-menu.show a.dropdown-item:last-child {
+  border: none;
+}
+
+/* line 1312, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.breadcrumbs ul {
+  padding: 27px 0 5px 0;
+  display: flex;
+}
+
+/* line 1315, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.breadcrumbs ul li {
+  position: relative;
+  color: #0D1355;
+  font-size: 0.75rem;
+  font-family: "Roboto", sans-serif;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+/* line 1321, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.breadcrumbs ul li::after {
+  position: absolute;
+  border: none;
+  content: '';
+  right: 0px;
+  top: 6px;
+  width: 5px;
+  height: 5px;
+  border-bottom: solid 1px #0D1355;
+  border-left: solid 1px #0D1355;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+}
+
+/* line 1337, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.breadcrumbs ul li:last-child {
+  padding-right: 0px;
+}
+
+/* line 1338, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.breadcrumbs ul li:last-child::after {
+  display: none;
+}
+
+/* line 1340, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.breadcrumbs ul li a {
+  color: #0D1355;
+  font-size: 0.75rem;
+}
+
+/* line 1344, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.breadcrumbs ul li span {
+  color: #0D1355;
+  font-size: 0.75rem;
+  display: block;
+}
+
+/* line 1352, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.breadcrumbs.text-white li, .breadcrumbs.text-white a, .breadcrumbs.text-white span {
+  color: #fff;
+}
+
+/* line 1356, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.breadcrumbs.text-white li:after {
+  border-color: #fff;
+}
+
+/* line 1362, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.br-10 {
+  border-radius: 10px;
+}
+
+/* line 1365, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.br-20 {
+  border-radius: 20px;
+}
+
+/* line 1368, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.section_bg {
+  background-color: #F8F9FD;
+}
+
+/* line 1371, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.pt-first-section {
+  padding-top: 40px;
+}
+.pt-first-section-with-breadcrumb {
+  padding-top: 65px;
+}
+
+/* line 1374, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.innerpage {
+  position: relative;
+  z-index: 0;
+}
+.innerpage.pt-first-section{ padding-top: 65px;}
+
+/* line 1377, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.innerpage .breadcrumbs {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #F8F9FD;
+}
+
+@media (max-width: 992px) {
+  /* line 1377, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .innerpage .breadcrumbs {
+    position: relative;
+  }
+  .pt-first-section-with-breadcrumb{ padding-top:0px;}
+}
+
+/* line 1388, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.innerpage .section-heading {
+  margin-bottom: 30px;
+}
+
+/* line 1391, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.innerpage .section-head {
+  margin-bottom: 30px;
+}
+
+/* line 1393, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.innerpage .section-head .section-heading {
+  margin-bottom: 10px;
+}
+
+/* line 1396, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.innerpage .section-head p {
+  margin-bottom: 0;
+}
+
+/* line 1400, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.innerpage .pb-section {
+  padding-bottom: 40px;
+}
+
+/* line 1404, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.banner_section {
+  padding-top: 65px;
+  position: relative;
+  border-bottom: solid 1px #e6e6e6;
+}
+
+/* line 1408, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.banner_section.pt-15px {
+  padding-top: 15px;
+}
+
+/* line 1411, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.banner_section.gradient_bg {
+  background: #e5f3ff;
+  background: linear-gradient(-235deg, #e5f3ff 0%, #fafdff 40%, white 70%, #e5f3ff 100%);
+  padding-top: 100px;
+}
+
+@media (max-width: 992px) {
+  /* line 1411, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .banner_section.gradient_bg {
+    padding-top: 30px;
+  }
+}
+
+/* line 1419, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.banner_section .breadcrumbs {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+/* line 1427, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.banner_section .Inner_banner_content h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-family: "Roboto-Medium", sans-sarif;
+}
+
+/* line 1432, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.banner_section .Inner_banner_content .hero_image {
+  display: flex;
+  background-image: url(../images/hero_image_bg_plus.png);
+  background-repeat: no-repeat;
+  background-position: 110px bottom;
+}
+
+/* line 1439, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.banner_section .Inner_banner_content .banner_content .title_with_image {
+  padding-right: 75px;
+  position: relative;
+  display: inline-block;
+  padding-top: 25px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+  /* line 1439, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .banner_section .Inner_banner_content .banner_content .title_with_image {
+    padding-top: 15px;
+    padding-right: 50px;
+  }
+}
+
+/* line 1449, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.banner_section .Inner_banner_content .banner_content .title_with_image img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media (max-width: 992px) {
+  /* line 1449, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .banner_section .Inner_banner_content .banner_content .title_with_image img {
+    max-width: 35px;
+  }
+}
+
+/* line 1458, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.banner_section .Inner_banner_content .banner_content h1 {
+  font-size: 2rem;
+  font-family: "Roboto-Medium", sans-sarif;
+  color: #024594;
+}
+
+@media (max-width: 992px) {
+  /* line 1458, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .banner_section .Inner_banner_content .banner_content h1 {
+    font-size: 1.25rem;
+  }
+}
+
+/* line 1467, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.banner_section .Inner_banner_content .banner_content .title {
+  margin-bottom: 30px;
+}
+
+/* line 1470, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.banner_section .Inner_banner_content .banner_content h3 {
+  font-size: 2.5rem;
+}
+
+/* line 1473, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.banner_section .Inner_banner_content .banner_content h4 {
+  font-size: 1.5rem;
+}
+
+/* line 1476, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.banner_section .Inner_banner_content .banner_content h5 {
+  font-size: 1.5rem;
+  color: #024594;
+  margin-bottom: 10px;
+}
+
+/* line 1480, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.banner_section .Inner_banner_content .banner_content h5 img {
+  margin-right: 10px;
+}
+
+/* line 1486, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.banner_section .Inner_banner_content .container.bg-plus {
+  background-image: url(../images/icons/hero_content_bg_plus.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+/* line 1493, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.banner_section .Inner_banner_content.left_content_top_space .banner_content {
+  padding-top: 65px;
+}
+
+@media (max-width: 992px) {
+  /* line 1499, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .banner_section .Inner_banner_content {
+    background-image: url(../images/hero_image_bg_plus.png);
+    background-repeat: no-repeat;
+    background-position: 120px 100%;
+  }
+  /* line 1503, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .banner_section .Inner_banner_content h2 {
+    font-size: 1.25rem;
+  }
+  /* line 1506, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .banner_section .Inner_banner_content .hero_image {
+    padding-left: 0;
+    background-image: none;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+  }
+  /* line 1513, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .banner_section .Inner_banner_content .banner_content {
+    background-size: 32px;
+    background-position: 100% 45%;
+  }
+  /* line 1516, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .banner_section .Inner_banner_content .banner_content h3 {
+    font-size: 1.125rem;
+  }
+  /* line 1519, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .banner_section .Inner_banner_content .banner_content h4 {
+    font-size: 0.656rem;
+  }
+  /* line 1522, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .banner_section .Inner_banner_content .banner_content h5 {
+    font-size: 0.875rem;
+  }
+  /* line 1524, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .banner_section .Inner_banner_content .banner_content h5 img {
+    max-width: 11px;
+    margin-right: 5px;
+  }
+  /* line 1529, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .banner_section .Inner_banner_content .banner_content p {
+    font-size: 0.656rem;
+  }
+}
+
+/* line 1535, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.banner_section .plus_icon {
+  position: absolute;
+  bottom: 60px;
+  left: -15px;
+}
+
+@media (max-width: 992px) {
+  /* line 1535, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .banner_section .plus_icon {
+    display: none;
+  }
+}
+
+/* form elements */
+/* line 1547, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.white_rounded_box {
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* line 1552, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+input:focus, button:focus, .btn:focus .form-control:focus {
+  box-shadow: none !important;
+}
+
+/* line 1555, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.search_btn:focus {
+  outline: none;
+}
+
+/* line 1558, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.form_wrap {
+  padding: 40px;
+}
+
+@media (max-width: 992px) {
+  /* line 1558, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .form_wrap {
+    padding: 30px 15px;
+  }
+}
+
+/* line 1563, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.form_wrap .form-group {
+  position: relative;
+}
+
+/* line 1565, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.form_wrap .form-group .icon {
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  top: 22px;
+  width: 25px;
+  height: 25px;
+  content: "";
+  border-radius: 50%;
+}
+
+/* line 1574, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.form_wrap .form-group .icon.success {
+  background: #12BA0B;
+}
+
+/* line 1576, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.form_wrap .form-group .icon.success:after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 10px;
+  width: 6px;
+  height: 11px;
+  border-right: solid 2px #fff;
+  border-bottom: solid 2px #fff;
+  transform: rotate(45deg);
+}
+
+/* line 1589, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.form_wrap .form-group .custom-select-trigger {
+  background: none;
+}
+
+/* line 1590, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.form_wrap .form-group .form-control {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 1px #F58B41;
+  border-radius: 0px;
+  font-size: 1.125rem;
+  color: #024594;
+  padding: 0;
+}
+
+@media (max-width: 992px) {
+  /* line 1590, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .form_wrap .form-group .form-control {
+    font-size: 1rem;
+  }
+}
+
+/* line 1602, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.form_wrap .form-group .form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* line 1608, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.form_wrap .form-group label {
+  position: relative;
+  -webkit-transition-property: -webkit-transform, color;
+  -moz-transition-property: -moz-transform, color;
+  transition-property: transform, color;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+
+/* line 1620, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.form_wrap .form-group.-animated {
+  padding-top: 15px;
+}
+
+/* line 1622, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.form_wrap .form-group.-animated label {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  margin-bottom: 0;
+  font-size: 1rem;
+  color: #024594;
+  -webkit-transform: translateY(28px);
+  -moz-transform: translateY(28px);
+  -ms-transform: translateY(28px);
+  -o-transform: translateY(28px);
+  transform: translateY(28px);
+  transition: all .3s;
+}
+
+/* line 1639, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.form_wrap .form-group.-animated.-active label, .form_wrap .form-group.-animated.-focus label {
+  font-size: 0.688rem;
+  color: #151A47;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  top: 7px;
+}
+
+/* line 1651, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.form_wrap .form-group.select-dd {
+  position: relative;
+  padding-top: 15px;
+}
+
+/* line 1654, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.form_wrap .form-group.select-dd label {
+  font-size: 0.688rem;
+  color: #151A47;
+  position: absolute;
+  left: 0;
+  top: 7px;
+  margin: 0;
+  z-index: 1;
+}
+
+/* line 1664, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.form_wrap .form-group textarea {
+  resize: none;
+}
+
+/* line 1668, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.form_wrap .otp_row {
+  position: relative;
+}
+
+/* line 1670, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.form_wrap .otp_row .resend_otp {
+  font-size: .688rem;
+  color: #000;
+  position: absolute;
+  top: 28px;
+  right: -100px;
+  padding-left: 15px;
+}
+.react-tel-input input {
+  padding-left: 48px !important;
+}
+
+/* line 1677, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.form_wrap .otp_row .resend_otp:after {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -12px;
+  content: "";
+  width: 1px;
+  height: 24px;
+  background: #e6e6e6;
+}
+
+@media (max-width: 992px) {
+  /* line 1670, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .form_wrap .otp_row .resend_otp {
+    top: 65px;
+    right: 15px;
+  }
+}
+
+/* line 1691, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.form_wrap .otp_row .resend_otp a {
+  color: #F68C42;
+}
+
+@media (max-width: 575px) {
+  /* line 1695, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .form_wrap .otp_row .err_msg {
+    padding-right: 100px;
+  }
+}
+
+/* line 1701, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.form_wrap .err_msg {
+  font-size: 0.75rem;
+  color: #F68C42;
+  display: inline-block;
+}
+
+/* line 1706, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.form_wrap .field_note {
+  font-size: 0.75rem;
+  color: #F68C42;
+  display: block;
+}
+
+/* line 1711, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.form_wrap .btn_wrap {
+  margin-top: 24px;
+}
+
+/* line 1714, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.form_wrap .not_a_member {
+  margin-top: 70px;
+  padding-top: 20px;
+  border-top: solid 1px rgba(117, 117, 117, 0.2);
+  font-size: 1.125rem;
+}
+
+/* line 1719, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.form_wrap .not_a_member a {
+  color: #F68C42;
+  text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+  /* line 1714, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .form_wrap .not_a_member {
+    padding-bottom: 20px;
+  }
+}
+
+/* line 1727, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.form_wrap .form_block {
+  padding-left: 50px;
+  margin-bottom: 35px;
+}
+
+@media (max-width: 992px) {
+  /* line 1727, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .form_wrap .form_block {
+    padding-left: 0;
+  }
+}
+
+/* line 1736, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.tankyou_div {
+  text-align: center;
+  padding: 40px 15px 60px 15px;
+}
+
+/* line 1739, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.tankyou_div .check_mark {
+  margin-bottom: 20px;
+}
+
+/* line 1742, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.tankyou_div .thankyou_content {
+  margin-bottom: 35px;
+}
+
+/* line 1744, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.tankyou_div .thankyou_content p {
+  font-size: 1.125rem;
+  color: #0D1355;
+  margin-bottom: 0;
+}
+
+/* line 1748, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.tankyou_div .thankyou_content p span {
+  color: #F68C42;
+}
+
+/* line 1755, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.btn_group .btn {
+  margin-right: 15px;
+}
+
+/* line 1759, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.btn_group_left {
+  margin-top: 30px;
+}
+
+/* line 1761, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.btn_group_left .btn {
+  margin-right: 15px;
+}
+
+@media (max-width: 992px) {
+  /* line 1761, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .btn_group_left .btn {
+    padding: 7px 20px;
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  /* line 1772, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .confirmation_section .btn_group .btn {
+    padding: 7px 20px;
+    min-width: 100px;
+  }
+}
+
+/** Custom Select **/
+/* line 1781, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.custom-select-wrapper {
+  position: relative;
+  display: inline-block;
+  user-select: none;
+  width: 100%;
+}
+
+/* line 1787, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.custom-select-wrapper select {
+  display: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+}
+
+/* line 1796, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.custom-select {
+  position: relative;
+  display: inline-block;
+  background-image: none;
+}
+
+/* line 1802, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.custom-select-trigger {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 10px 15px 0 0;
+  font-size: 1rem;
+  color: #024594;
+  background: #fff;
+  cursor: pointer;
+}
+
+/* line 1812, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.custom-select-trigger:after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 8px;
+  height: 8px;
+  top: 50%;
+  right: 0;
+  margin-top: 3px;
+  border-bottom: 1px solid #F58B41;
+  border-right: 1px solid #F58B41;
+  transform: rotate(45deg) translateY(-50%);
+  transition: all .4s ease-in-out;
+  transform-origin: 50% 0;
+}
+
+/* line 1829, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.custom-select.opened .custom-select-trigger:after {
+  margin-top: 3px;
+  transform: rotate(-135deg) translateY(-50%);
+}
+
+/* line 1834, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.custom-options {
+  position: absolute;
+  display: block;
+  top: 100%;
+  left: 0;
+  right: 0;
+  min-width: 100%;
+  border: 1px solid #b5b5b5;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.07);
+  background: #fff;
+  transition: all .4s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(-15px);
+  z-index: 100;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+/* line 1856, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.custom-select.opened .custom-options {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  transform: translateY(0);
+}
+
+/* line 1863, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.option-hover:before {
+  background: #f9f9f9;
+}
+
+/* line 1867, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.custom-option {
+  position: relative;
+  display: block;
+  padding: 6px 10px;
+  border-bottom: 1px solid #b5b5b5;
+  font-size: 1rem;
+  color: #024594;
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+}
+
+/* line 1877, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.custom-option:first-of-type {
+  border-radius: 4px 4px 0 0;
+}
+
+/* line 1881, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.custom-option:last-of-type {
+  border-bottom: 0;
+  border-radius: 0 0 4px 4px;
+}
+
+/* line 1886, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.custom-option:hover, .custom-option.selection {
+  background: #f9f9f9;
+}
+
+@media (max-width: 992px) {
+  /* line 1867, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .custom-option {
+    font-size: .75rem;
+  }
+}
+
+/* custom radio checkbox */
+/* line 1895, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.custom {
+  margin-bottom: 16px;
+}
+
+/* line 1899, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.radio-group .radio-main-label {
+  font-size: 0.688rem;
+  color: #151A47;
+  margin-top: 7px;
+}
+
+/* line 1906, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.radio-group .custom-radio input[type="radio"] {
+  display: none;
+}
+
+/* line 1910, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.radio-group .custom-radio label {
+  cursor: pointer;
+  position: relative;
+  font-size: 1rem;
+  color: #044597;
+  padding-left: 5px;
+}
+
+/* line 1918, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.radio-group .custom-radio label::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  border: 1px solid #F58B41;
+  border-radius: 50%;
+  top: 12px;
+  left: -15px;
+  transform: translateY(-50%);
+  transition: border-color 400ms ease;
+}
+
+/* line 1932, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.radio-group .custom-radio label::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #F58B41;
+  border: 2px solid #F58B41;
+  border-radius: 50%;
+  top: 12px;
+  left: -15px;
+  transform: translateY(-50%) scale(0);
+  transition: transform 400ms ease;
+}
+
+/* line 1946, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.radio-group .custom-radio input[type="radio"]:checked + label::before {
+  border-color: #F68C42;
+}
+
+/* line 1950, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.radio-group .custom-radio input[type="radio"]:checked + label::after {
+  transform: translateY(-50%) scale(0.55);
+}
+
+/* line 1957, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.checkbox-group .custom-checkbox {
+  margin-bottom: 10px;
+}
+
+/* line 1960, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.checkbox-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+/* line 1969, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.checkbox-group label {
+  position: relative;
+  cursor: pointer;
+  padding-left: 30px;
+  margin: 0;
+  font-size: 0.625rem;
+  color: #0D1355;
+}
+
+/* line 1976, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.checkbox-group label a {
+  color: #F68C42;
+  text-decoration: underline;
+}
+
+/* line 1981, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.checkbox-group label:before {
+  content: '';
+  background-color: transparent;
+  border: 1px solid rgba(112, 112, 112, 0.3);
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+/* line 1998, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.checkbox-group input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 7px;
+  width: 6px;
+  height: 12px;
+  border: solid #F68C42;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* line 2011, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.mandatory {
+  color: #F68C42;
+}
+
+/* autofill style */
+/* line 2016, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: none;
+  border-bottom: 1px solid #F58B41;
+  -webkit-text-fill-color: #024594;
+  box-shadow: none !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* common tabs */
+/* line 2033, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.gallery-tabs {
+  border: none;
+  margin-bottom: 40px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 10px 0;
+  margin: 0 -15px;
+}
+
+/* line 2041, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.gallery-tabs .nav-item {
+  padding: 0 15px;
+}
+
+/* line 2044, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.gallery-tabs .nav-link {
+  border: none;
+  border-radius: 28px;
+  padding: 16px 50px;
+  color: #024594;
+  position: relative;
+  transition: all .3s;
+  white-space: nowrap;
+}
+
+/* line 2052, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.gallery-tabs .nav-link:after {
+  transition: all .3s;
+  content: "";
+  width: 0px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -26px;
+  height: 2px;
+  content: "";
+  background-color: #F68C42;
+}
+
+/* line 2065, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.gallery-tabs .nav-link:hover:after, .gallery-tabs .nav-link.active:after {
+  width: 52px;
+}
+
+/* line 2069, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.gallery-tabs .nav-link.active {
+  color: #024594;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 992px) {
+  /* line 2044, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .gallery-tabs .nav-link {
+    padding: 10px 15px;
+    font-size: .875rem;
+  }
+}
+
+@media (max-width: 992px) {
+  /* line 2033, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .gallery-tabs {
+    padding: 10px;
+  }
+}
+
+/* line 2084, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.gallery-tabs.min-space .nav-item .nav-link {
+  padding: 15px 30px;
+}
+
+/* line 2090, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.slick-dots {
+  left: 0;
+}
+
+/* line 2093, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.slick-dots li button:before {
+  font-size: 40px;
+  color: transparent;
+  border: solid 1px #024594;
+  border-radius: 50%;
+  background-color: transparent;
+  opacity: 1;
+  width: 13px;
+  height: 13px;
+  line-height: 13px;
+  content: '';
+}
+
+/* line 2105, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.slick-dots li.slick-active button:before {
+  color: #F68C42;
+  background-color: #F68C42;
+  border-color: #F68C42;
+}
+
+/* line 2114, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.badge {
+  font-size: .625rem;
+  line-height: 1.6;
+  display: inline-block;
+  padding: 4px 15px;
+  border-radius: 14px;
+  border: none;
+  background-color: #024594;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* line 2124, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.badge.white {
+  background-color: #fff;
+  color: #024594;
+  border: solid 1px #d3d3d3;
+}
+
+/* line 2129, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.badge.orange {
+  background-color: #F68C42;
+  color: #fff;
+}
+
+/* line 2133, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.badge img {
+  max-width: 11px;
+  border-radius: 0px !important;
+  margin-right: 4px;
+  display: inline-block;
+}
+
+/* line 2140, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.back-to-top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  flex-direction: column;
+  text-align: center;
+  display: none;
+  cursor: pointer;
+}
+
+/* line 2149, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.back-to-top.show {
+  display: flex;
+}
+
+/* line 2152, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.back-to-top .icon {
+  width: 44px;
+  height: 44px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #024594;
+}
+
+/* line 2158, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.back-to-top .icon:after {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  content: "";
+  border-top: solid 3px #fff;
+  border-right: solid 3px #fff;
+  transform: rotate(-45deg);
+  top: 18px;
+  left: 15px;
+}
+
+/* line 2170, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.back-to-top .text {
+  font-size: .5rem;
+  color: #0B103F;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+@media (max-width: 992px) {
+  /* line 2140, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .back-to-top {
+    bottom: 57px;
+    right: 0;
+  }
+  /* line 2179, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .back-to-top .icon {
+    width: 38px;
+    height: 40px;
+    border-radius: 0px;
+  }
+  /* line 2183, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .back-to-top .icon:after {
+    width: 12px;
+    height: 12px;
+    left: 14px;
+    top: 10px;
+  }
+  /* line 2189, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .back-to-top .icon:before {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 20px;
+    background: #fff;
+    left: 19px;
+    top: 12px;
+  }
+  /* line 2199, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .back-to-top .text {
+    display: none;
+  }
+}
+
+/* line 2204, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.underlined {
+  text-decoration: underline;
+}
+
+/* line 2207, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.color_orange {
+  color: #F68C42;
+}
+
+/*------------Toggle Switch related css Dated 06-05-2021 Start------------*/
+/* line 2211, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 98px;
+  height: 40px;
+}
+
+/* line 2216, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* line 2220, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.switch input:checked + .switch_slider {
+  background-color: #ffffff;
+}
+
+/* line 2224, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.switch input:focus + .switch_slider {
+  box-shadow: 0px 3px 6px #000;
+}
+
+/* line 2228, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.switch input:checked + .switch_slider:before {
+  -webkit-transform: translateX(60px);
+  -ms-transform: translateX(60px);
+  transform: translateX(60px);
+  -moz-transform: translateX(60px);
+  -o-transform: translateX(60px);
+}
+
+/* line 2236, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.switch .switch_slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #cccccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+/* line 2246, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.switch .switch_slider:before {
+  position: absolute;
+  content: "";
+  height: 43px;
+  width: 43px;
+  left: -2px;
+  bottom: -1px;
+  background-color: #F68C41;
+  -webkit-transition: .4s;
+  transition: .4s;
+  box-shadow: 0px 3px 6px #000;
+}
+
+/* line 2258, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.switch .switch_slider.switch_round {
+  border-radius: 20px;
+}
+
+/* line 2260, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.switch .switch_slider.switch_round:before {
+  border-radius: 50%;
+}
+
+/*------------Toggle Switch related css Dated 06-05-2021 End------------*/
+/*------------Common Bullet Style Related css Dated 12-05-2021 Start------------*/
+/* line 2270, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.bullet_list {
+  padding-left: 0px;
+}
+
+/* line 2271, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.bullet_list li {
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  color: #262e30;
+}
+
+/* line 2275, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.bullet_list li:before {
+  position: absolute;
+  content: '';
+  left: 0px;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  background: #F68C42;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+/*------------Common Bullet Style Related css Dated 12-05-2021 End------------*/
+/* common error css*/
+/* line 2294, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.field_error {
+  font-size: 0.75rem;
+  color: #F68C42;
+  margin-top: 4px;
+}
+
+/* loading css */
+/* line 2301, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.loader-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.absoluteCenter {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loader-div span {
+  color: #0B103F;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.loading {
+  position: relative;
+  height: 34px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* line 2306, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.loading:after {
+  content: "";
+  height: 0px;
+  width: 0px;
+  padding: 12px;
+  border: 4px solid #8cb5e9;
+  border-right-color: #034597;
+  border-radius: 22px;
+  -webkit-animation: rotate 1s infinite linear;
+  animation: rotate 1s infinite linear;
+  text-align: center;
+  display: inline-block;
+}
+
+.link-disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+.link-disabled a{
+  cursor: default !important;
+  text-decoration: none !important;
+}
+.d-flex-aic {
+  display: flex;
+  align-items: center;
+}
+.d-flex-aic-jc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.d-flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.width-100px {
+  width: 100px;
+}
+.loader-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+span.loading {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  margin-left: 5px;
+}
+.resend_otp span.loading {
+  position: absolute;
+  right: -25px;
+}
+span.loading::after {
+  padding: 6px;
+  border: 4px solid #ccc;
+  border-right-color: #F68C42;
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+/* line 2327, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.inner_common_banner {
+  position: relative;
+}
+
+/* line 2329, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.inner_common_banner img {
+  width: 100%;
+}
+
+/* line 2332, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.inner_common_banner .banner_content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.inner_common_banner .banner_content .container{ padding-right: 40%;}
+/* line 2340, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.inner_common_banner .banner_content h1 {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+/* line 2344, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.inner_common_banner .banner_content .subhead {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 992px) {
+  /* line 2332, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .inner_common_banner .banner_content {
+    position: relative;
+    margin-top: 30px;
+  }
+  .inner_common_banner .banner_content .container{ padding-right:15px;}
+  /* line 2350, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .inner_common_banner .banner_content h1 {
+    text-align: center;
+    color: #044597;
+    font-size: 2.188rem;
+  }
+}
+
+/* line 2356, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.inner_common_banner .banner_content.text_left {
+  text-align: left;
+}
+
+@media (max-width: 992px) {
+  /* line 2356, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .inner_common_banner .banner_content.text_left {
+    text-align: center;
+  }
+}
+
+/* line 2362, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.inner_common_banner .banner_content.text_right {
+  text-align: right;
+}
+
+@media (max-width: 992px) {
+  /* line 2362, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .inner_common_banner .banner_content.text_right {
+    text-align: center;
+  }
+}
+
+/* line 2369, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.inner_common_banner .banner_content.text_dark h1 {
+  color: #044597;
+}
+
+/* line 2372, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.inner_common_banner .banner_content.text_dark p {
+  color: #262e30;
+}
+
+/* line 2377, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.inner_common_banner .banner_content.text_light h1, .inner_common_banner .banner_content.text_light p {
+  color: #fff;
+}
+
+/* line 2381, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.inner_common_banner .banner_content .bannerDescription {
+  max-width: 600px;
+}
+
+/* common table */
+/* line 2388, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.no-wrap {
+  white-space: nowrap;
+}
+
+/* line 2391, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.table_wrap {
+  overflow-y: auto;
+}
+
+/* line 2396, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.table_wrap table tr th, .table_wrap table tr td {
+  border-color: #F68C42;
+  vertical-align: top;
+}
+
+/* line 2400, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.table_wrap table tr th {
+  color: #024594;
+  background-color: #F8F9FD;
+}
+
+/* line 2406, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.table_wrap .btn-primary {
+  min-width: 100px;
+  padding: 7px 15px;
+}
+
+/* common modal */
+/* line 2413, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.common_modal .close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: solid 1px #0B103F;
+  font-weight: 300;
+  z-index: 1;
+}
+
+/* line 2423, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.common_modal .modal-header {
+  padding-right: 70px;
+  padding-top: 25px;
+}
+
+/* line 2426, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.common_modal .modal-header h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* line 2431, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.common_modal .modal-body {
+  height: calc(100vh - 200px);
+  overflow-y: auto;
+}
+
+/* line 2434, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.common_modal .modal-body .pay_terms_wrap {
+  padding: 20px;
+}
+
+/* line 2436, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.common_modal .modal-body .pay_terms_wrap ul {
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+/* line 2439, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.common_modal .modal-body .pay_terms_wrap ul li {
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  color: #262e30;
+}
+
+/* line 2443, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.common_modal .modal-body .pay_terms_wrap ul li:before {
+  position: absolute;
+  content: '';
+  left: 0px;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  background: #F68C42;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+.common_modal .modal-body .pay_terms_wrap ul li li{ padding-left:14px; margin-top: 5px; font-size: 0.9rem;}
+.common_modal .modal-body .pay_terms_wrap ul li li:before{  width:4px; height:4px; background: #044597;}
+.common_modal .modal-body .pay_terms_wrap ul li li li:before{ background: #000000;}
+
+@media (max-width: 992px) {
+  /* line 2434, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .common_modal .modal-body .pay_terms_wrap {
+    padding: 0;
+  }
+}
+
+/* line 2466, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.content_card_box {
+  border: 1px solid #F68C42;
+  border-radius: 20px;
+  padding: 25px 25px 5px;
+}
+
+@media (max-width: 992px) {
+  /* line 2466, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .content_card_box {
+    padding: 20px 20px 5px;
+  }
+}
+
+/* line 2473, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.content_card_box p {
+  line-height: 1.8em;
+}
+
+/* line 2475, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.content_card_box p strong {
+  color: #F68C42;
+  font-family: "Roboto-Medium", sans-sarif;
+}
+
+/* line 2480, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.content_card_box .para_text {
+  align-items: center;
+  display: flex;
+  padding-left: 0;
+}
+
+@media (max-width: 992px) {
+  /* line 2480, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .content_card_box .para_text {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+/* line 2489, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.content_card_box .blue_band {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: #024594;
+  border-radius: 10px;
+  color: #fff;
+  font-family: "Roboto-Light",sans-sarif;
+  padding: 18px;
+  font-size: 1.125rem;
+}
+
+/* line 2498, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.content_card_box .blue_band p {
+  margin-bottom: 0;
+}
+
+/* line 2501, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.inner_card_content {
+  padding: 20px 30px;
+}
+
+/* line 2503, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.inner_card_content h2 {
+  font-size: 1.5rem;
+  color: #F68C42;
+}
+
+/* line 2507, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.inner_card_content h5 {
+  font-size: 1.25rem;
+  color: #024594;
+}
+
+/* line 2511, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.inner_card_content ul {
+  padding-left: 0px;
+}
+
+/* line 2513, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.inner_card_content ul li {
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  color: #262e30;
+}
+
+/* line 2518, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.inner_card_content ul li:before {
+  position: absolute;
+  content: '';
+  left: 0px;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  background: #F68C42;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+/* line 2536, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.tab-content:not(.hp_gallery .tab-content) ul, .common_accordion .card-body ul {
+  padding-left: 0px;
+}
+
+/* line 2538, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.tab-content:not(.hp_gallery .tab-content) ul li, .common_accordion .card-body ul li {
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  color: #262e30;
+}
+
+/* line 2543, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.tab-content:not(.hp_gallery .tab-content) ul li:before, .common_accordion .card-body ul li:before {
+  position: absolute;
+  content: '';
+  left: 0px;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  background: #F68C42;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+/* line 2561, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.scrollable-tabs {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* line 2568, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.header-404 .top_bar {
+  height: 30px;
+}
+
+/* line 2571, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.header-404 .navbar {
+  padding: 15px 0 !important;
+}
+
+/* line 2575, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.error_page_404 {
+  padding: 0 0 40px;
+}
+
+/* line 2577, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.error_page_404 .img_wrap {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 992px) {
+  /* line 2580, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .error_page_404 .img_wrap img {
+    max-width: 200px;
+  }
+}
+
+/* line 2585, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.error_page_404 h1 {
+  color: #F68C42;
+}
+
+@media (max-width: 992px) {
+  /* line 2585, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .error_page_404 h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  /* line 2575, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+  .error_page_404 {
+    padding-top: 60px;
+  }
+}
+
+/* tabular data card */
+/* line 2597, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.t-data-col {
+  margin-bottom: 20px;
+}
+
+/* line 2600, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.table_data_card {
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  border: none;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+/* line 2608, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.table_data_card span {
+  color: #707070;
+  font-size: .875rem;
+}
+
+/* line 2612, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.table_data_card p {
+  color: #044597;
+  margin: 0;
+}
+
+/* line 2616, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.table_data_card .data_row {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: solid 1px #C9C9C9;
+}
+
+/* line 2620, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.table_data_card .data_row:last-child {
+  border: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+/* line 2626, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.table_data_card .btn {
+  min-width: 100px;
+  padding: 7px 20px;
+  border-radius: 20px;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
+/* line 2632, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.table_data_card .btn.btn-success {
+  background-color: #F68C42;
+}
+
+/* line 2639, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.confirmation_modal .modal-body {
+  height: auto;
+  text-align: center;
+}
+
+/* line 2643, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.confirmation_modal .btn {
+  border-radius: 20px;
+  min-width: 100px;
+  padding: 7px 20px;
+  text-transform: uppercase;
+}
+
+/* line 2648, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.confirmation_modal .btn.btn-danger {
+  color: #fff;
+}
+
+/* tabular data card end */
+/* line 2656, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.help_center_container .help_center_head {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  position: relative;
+  padding-left: 120px;
+}
+
+/* line 2661, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.help_center_container .help_center_head .img_wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 90px;
+}
+
+/* line 2666, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.help_center_container .help_center_head .img_wrap img {
+  width: 80px;
+}
+
+/* line 2670, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.help_center_container .help_center_head h2.section-heading {
+  margin-bottom: 0;
+}
+
+/* line 2673, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.help_center_container .help_center_head .subhead {
+  color: #044597;
+  font-size: 1.25rem;
+}
+
+/* line 2679, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.help_center_container .accordion_container h2 {
+  margin-bottom: 20px;
+}
+
+/* line 2683, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.help_center_container .accordion_container .qa_container .ques {
+  position: relative;
+  padding-left: 25px;
+  color: #044597;
+}
+
+/* line 2687, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.help_center_container .accordion_container .qa_container .ques:before {
+  content: "Q.";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 2694, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.help_center_container .accordion_container .qa_container .ans {
+  position: relative;
+  padding-left: 25px;
+  color: #262e30;
+}
+
+/* line 2698, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.help_center_container .accordion_container .qa_container .ans:before {
+  content: "A.";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 2708, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/common.scss */
+.gatsby-image-wrapper-constrained {
+  display: block;
+}
+
+/*# sourceMappingURL=../common.map */
+
+/*BMI Calculator Result alignment changes CSS Start */
+.topBMIResultRow { display: flex; }
+.topBMIResultRow .resultsDv{ padding-left: 10px;}
+/*BMI Calculator Result alignment changes CSS End */
+
+.select-disabled{ pointer-events: none; opacity: 0.5;}
+.common_accordion .card-body ul li li, .tab-content:not(.hp_gallery .tab-content) ul li li{ padding-left:14px; margin-top: 5px; font-size: 0.9rem;}
+.common_accordion .card-body ul li li:before, .tab-content:not(.hp_gallery .tab-content) ul li li:before{ width:4px; height:4px; background: #044597; }
+.common_accordion .card-body ul li li li:before, .tab-content:not(.hp_gallery .tab-content) ul li li li:before{ background-color: #000000;}
+header .navbar .main-nav .navbar-nav .nav-item .nav-link{ font-size: 0.875rem; color: #0B103F;}
+header .navbar .main-nav .navbar-nav .nav-item .nav-link.dropdown-toggle, header .navbar .main-nav .navbar-nav .nav-item .nav-link{ text-transform:uppercase;}
+header .navbar .main-nav .navbar-nav .nav-item.dropdown .dropdown-menu ul.row{ padding:10px 15px;}
+
+.form_wrap .form-group.-animated.-active label.typeFile{ top:-7px; }
+.form_wrap .form-group input[type="file"]{ text-indent:-9999px; }
+.form_wrap .form-group.-animated.-active input[type="file"]{ text-indent:inherit; }
+header .navbar .main-nav .navbar-nav{ padding-right: 15px;}
+@media (max-width: 992px) {
+  header .navbar .main-nav .navbar-nav{ padding-right: 0px;}
+}
+
+/*-----------------Dropdown Css Start----------*/
+header .navbar .main-nav .navbar-nav .nav-item.dropdown.show .nav-link.dropdown-toggle{ color: #F68C42; font-family: "Roboto-Bold", sans-sarif;}
+header .navbar .main-nav .navbar-nav .nav-item .nav-link.dropdown-toggle:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+ background: transparent;
+  width: 100%;
+  content: "";
+}
+header .navbar .main-nav .navbar-nav .nav-item.dropdown.show .nav-link.dropdown-toggle:before{  background: #F68C42;} 
+header .navbar .main-nav .navbar-nav .nav-item .nav-link.dropdown-toggle:after{ top:0px; right:0px; position: relative;}
+header .navbar .main-nav .navbar-nav .nav-item.dropdown.show .nav-link.dropdown-toggle::after{ border-color:#F68C42; transform: rotate(-222deg); -webkit-transform: rotate(-222deg); -moz-transform: rotate(-222deg); -ms-transform: rotate(-222deg); -o-transform: rotate(-222deg); top:6px; } 
+.dropdown-menu{ background: transparent linear-gradient(0deg, #044597 0%, #2F70BC 100%) 0% 0% no-repeat padding-box; border:0px; border-radius: 0px; -webkit-border-radius: 0px; -moz-border-radius: 0px; -ms-border-radius: 0px; -o-border-radius: 0px; padding:20px 0px 0px; margin: 3px 0px 0px 0px;}
+header .navbar .main-nav .navbar-nav .nav-item.dropdown .dropdown-menu li a{ color:#ffffff; border:0px; padding: 5px 0px;
+border-bottom: 2px solid transparent; display: inline-block;   transition: all .4s;}
+header .navbar .main-nav .navbar-nav .nav-item.dropdown .dropdown-menu li a:hover{ border-color:#F68C42; }
+header .navbar .main-nav .navbar-nav .nav-item.dropdown .dropdown-menu li.active a{ border-color:#F68C42; }
+header .navbar .main-nav .navbar-nav, header .navbar .main-nav .container{ position: static;}
+header .navbar .main-nav >.container{ padding: 0px;}
+header .navbar .main-nav .navbar-nav{ padding: 0px 15px;}
+header .navbar .main-nav .container .dropdown-menu .container{ background:url(../images/dropdown-bg.png) no-repeat right top transparent;}
+header .navbar .main-nav .navbar-nav .nav-item.dropdown .dropdown-menu ul.row{ padding:20px 15px 47px 15px; width:100%;}
+header .navbar .main-nav .navbar-nav .nav-item.dropdown .dropdown-menu ul.row >li{ padding: 5px 15px; }
+
+@media (max-width: 992px) {
+  .dropdown-menu{ padding-top: 10px;}
+  header .navbar .main-nav .navbar-nav .nav-item.dropdown .dropdown-menu ul.row{ padding:10px 15px 27px 15px;}
+  header .navbar .main-nav .container .dropdown-menu .container{ background: none;}
+  header .navbar .main-nav .navbar-nav .nav-item.dropdown .dropdown-menu ul.row >li{ padding: 3px 15px; }
+}
+/*-----------------Dropdown Css End----------*/
+
+.form-group-file-upload label{ font-size: 0.688rem; color: #151A47; margin: 0; z-index: 1;}
+.form-group-file-upload input[type="file"]{ height: auto; border-color: #F58B41; color: #024594;}
+
+.table-price-wrap-orange td{ padding: 10px; border: 1px solid #ff9836;}
+.table-price-wrap-orange tr:first-child td{ border-left: 1px solid #ffffff; }
+.table-price-wrap-orange tr:first-child td:first-child{ border-left: 1px solid #ff9836; }
+
+p > a,.bullet_list > li > a{ color: #F68C42;}
+p > a:hover,.bullet_list > li > a:hover{ color: #0B103F;}
+
+@media (max-width: 992px) {
+  .pt-first-section,.innerpage.pt-first-section{ padding-top:0px;}
+}
+
+.white_rounded_box .borderStrip:before{ background: #F58B41; content: ''; position: absolute; right:30px; top:0px; width:1px; height: 100%; }
+.personalDetails2#divBMIResult .leftTitleText p strong{ font-size:1.3rem; font-weight: bold; }
+.topBMIResultRow .resultsDv{ font-size: 1.3rem; font-weight: bold;}
+.bmi-cal-wrapper .bmi_outputWrap{ display: flex;  flex-wrap: wrap; }
+.bmi-cal-wrapper .bmi_outputWrap .bmi_output{ width:100%;}
+
+@media (max-width: 1200px) {
+/* .bmi-cal-wrapper .personalDetails .btn-primary{ min-width: 130px;} */
+.personalDetails2#divBMIResult .leftTitleText p strong{ font-size:1.2rem;}
+.topBMIResultRow .resultsDv{ font-size: 1.2rem; }
+}
+
+@media (max-width: 992px) {
+.white_rounded_box .borderStrip:before{ display: none;}
+.bmi-cal-wrapper .bmi_outputWrap{ flex-direction: column-reverse; }
+.bmi-cal-wrapper .personalDetails .btn-primary{ margin-bottom: 15px;}
+}
+
+header .top_bar li .dropdown-menu a{ color:#ffffff; }
+header .top_bar li .dropdown-menu a:hover{ color: #024594;}
+.rbt-menu>.dropdown-item{ color:#ffffff;}
+.rbt-menu>.dropdown-item:hover { color: #16181b;}
+
+
+.searchWrap_section .common_speciality_wrap { padding-top: 20px; border-top: 1px solid rgb(0, 94, 164); margin-top: 20px; display: none; }
+.searchWrap_section .speciality_section .top_title { color: rgb(255, 255, 255); font-size: 1.125rem; display: block; padding-bottom: 10px; position: relative; padding-left: 15px; }
+.searchWrap_section .speciality_section .top_title::before { content: ""; position: absolute; left: 0px; bottom: 0px; width: 36px; height: 2px; background-color: rgb(246, 140, 66); }
+.searchWrap_section .speciality_section ul { padding: 23px 0px 0px 15px!important; margin: 0px; display: flex; flex-wrap: wrap; max-width: none !important;}
+@media (max-width: 992px) {
+  .searchWrap_section .speciality_section ul { margin-bottom: 15px; }
+}
+.searchWrap_section .speciality_section ul li { padding: 0px 5px 9px 0px; color: rgb(255, 255, 255); font-size: 0.688rem; font-family: Roboto-Medium, sans-sarif; display: block; }
+.searchWrap_section .speciality_section ul li:first-child { padding-left: 0px; }
+.searchWrap_section .speciality_section ul li a { display: block; border: 1px solid rgb(0, 94, 164); padding: 8px 30px; color: rgb(255, 255, 255); font-size: 0.688rem; font-family: Roboto-Medium, sans-sarif; border-radius: 20px; }
+.searchWrap_section .speciality_section ul li a:hover { text-decoration: none; background-color: rgb(255, 255, 255); border-color: rgb(2, 69, 148); color: rgb(2, 69, 148); }
+
+
+.modal-open .modal{ padding: 0px !important;}
+
+.btn-primary-solid-white {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #024594;
+  border: solid 1px #ffffff;
+  padding: 11px 24px;
+  border-radius: 26px;
+  letter-spacing: 1px;
+  min-width: 180px;
+}
+
+.btn-primary-solid-white:hover {
+  color: #024594;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+@media (max-width: 992px) {
+  .btn-primary-solid-white {
+    font-size: 0.875rem;
+    padding: 10px 15px;
+    min-width: 160px;
+  }
+}
+/*----------Custome Scrollbar css Start------------*/
+.scrollbar-dusty-grass::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #F5F5F5;
+  border-radius: 10px; }
+  
+  .scrollbar-dusty-grass::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5; }
+  
+  .scrollbar-dusty-grass::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #024594;}
+  
+  
+  .square::-webkit-scrollbar-track {
+  border-radius: 0 !important; }
+  
+  .square::-webkit-scrollbar-thumb {
+  border-radius: 0 !important; }
+  
+  .thin::-webkit-scrollbar {
+  width: 6px; }
+  
+  .scrollExample {
+    padding: 10px 0px;
+  position: relative;
+  overflow-y: scroll;
+  height: 300px; }
+/*----------Custome Scrollbar css End------------*/
+@media (max-width: 1024px) {
+  header .navbar .main-nav .navbar-nav .nav-item .nav-link{ padding: 15px 10px;}
+}
+@media (max-width: 992px) {
+  header .navbar .main-nav .navbar-nav .nav-item .nav-link{ padding: 15px 0px;}
+  header .navbar .main-nav .navbar-nav .nav-item.dropdown .dropdown-menu{ margin: 0px;}
+}
+
+/*----------Read More css Start-----------*/
+.morecontent span {
+  display: none;
+}
+.morelink {
+  display: inline-block;
+}
+/*----------Read More css End------------*/
+
+.react-datepicker-popper{
+  z-index: 2 !important;
+}
+.map-iframe{
+  width: 100%;
+  height: 350px;
+  display: block;
+  border: none;
+}
+.text-decoration-underline{ text-decoration: underline; display: inline-block;}
+.text-decoration-underline:hover{ text-decoration: none;}
+footer ul.list-unstyled.download_links{ display: none;}
+.common_accordion .card-body ul li a{ text-decoration: underline; color:#F68C42;}
+.common_accordion .card-body ul li a:hover{ text-decoration: none;}
+
+/*----------Read More css End------------*/
+.text-decoration-underline{ text-decoration: underline; display: inline-block;}
+.text-decoration-underline:hover{ text-decoration: none;}
+.btn-white-bg{ background-color: #ffffff;}
+footer ul.list-unstyled.download_links{ display: none;}
+.common_accordion .card-body ul li a{ text-decoration: underline; color:#F68C42;}
+.common_accordion .card-body ul li a:hover{ text-decoration: none;}
+.d-inline-table{ display: inline-table;}
+.cursor-pointer { cursor: pointer;}
+.archive_section.pressReleasewrap .select-dd-mm-yy .custom-select { width: 155px !important;}
+
+@media (max-width: 767px) {
+header .navbar .main-nav .navbar-nav .nav-item.dropdown .dropdown-menu ul.row{ padding: 10px 0px; }
+header .navbar .main-nav .navbar-nav .nav-item.dropdown .dropdown-menu ul.row >li{ padding: 3px 0px;}
+header .navbar .main-nav .navbar-nav .nav-item.dropdown .dropdown-menu ul li a{ margin-bottom: 0px;}
+.form_wrap .form-group.-animated label.topUpAssH{ top:-25px;}
+.form_wrap .form-group.-animated.-focus label.topUpAssH { top:7px;}
+}
+
+/*----------Hamburger Menu Icon css Start------------*/
+header .navbar .navbar-toggler .navbar-toggler-icon{ width: 30px; }
+header .navbar .navbar-toggler .navbar-toggler-icon i {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  width: 100%;
+  background: #024594;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+header .navbar .navbar-toggler .navbar-toggler-icon{
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  -ms-transition: .5s ease-in-out;
+} 
+header .navbar .navbar-toggler .navbar-toggler-icon.open{ margin-top: -7px; left: -2px;}
+
+header .navbar .navbar-toggler .navbar-toggler-icon.open i:nth-child(1) {
+  top: 18px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+header .navbar .navbar-toggler .navbar-toggler-icon.open i:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+header .navbar .navbar-toggler .navbar-toggler-icon.open i:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+/*----------Hamburger Menu Icon css End------------*/
+
+.form_wrap .otp_color{ color: #F68C42; font-size: .688rem;}
+ 
+.eventMainSec .custom-select-trigger{ overflow: hidden; height: 35px;}
+.eventMainSec .custom-select-trigger:after{ right:3px; }
+.eventMainSec .eventTitle{ font-size: 1.125rem; color: #024594; border-bottom: solid 1px #F58B41; display: block; padding-top: 10px;}
+
+
+@media (max-width: 992px) {
+  .eventMainSec .eventTitle{ font-size: 1rem;}
+}
+
+.banner_section .Inner_banner_content .banner_content .title h1{ font-size: 2.5rem; font-weight: 500; font-family: "Roboto", sans-serif; }
+@media (max-width: 992px) {
+  .banner_section .Inner_banner_content .banner_content .title h1 {
+    font-size: 1.125rem;
+  }
+}
+
+/* General Consent Radio tab CSS Start */
+.form_wrap .formNoteSec{ padding-bottom: 20px;}
+.form_wrap .formNoteSec .noteText{ font-size: 0.9rem; line-height: 1.3em; color: #ff0000; margin-bottom: 0px; padding-bottom: 5px;}
+.form_wrap .formNoteSec ol{ padding-left: 15px;}
+.form_wrap .formNoteSec ol li{ font-size: 0.9rem; line-height: 1.4em; padding-bottom: 5px;}
+.form_wrap .consentRadioSec .custom-control{display: inline-block; padding-bottom: 5px; cursor: pointer; padding-left:15px;}
+.form_wrap .consentRadioSec .custom-control.custom-radio label{ padding-left: 5px;}
+.form_wrap .consentRadioSec .custom-control{ margin-right: 10px;}
+.form_wrap .formNoteSec.languageBox{ display: none;}
+/* General Consent Radio tab CSS End */
+
+/* Common CSS for Speciality & Others Content Start */
+.common_accordion.specialty_accordion .card .card-body h1, .common_accordion.specialty_accordion .card .card-body h2,.common_accordion.specialty_accordion .card .card-body h3,.common_accordion.specialty_accordion .card .card-body h4,
+.common_accordion.specialty_accordion .card .card-body h5, .common_accordion.specialty_accordion .card .card-body h6{ font-size: 1.50rem;}
+.common_accordion .card-body p a{ text-decoration: underline; color: #F68C42;}
+.common_accordion .card-body p a:hover{ text-decoration: none;}
+/* Common CSS for Speciality & Others Content End */
+
+.form_wrap .form_block.consentFormBlock{ margin-bottom:0px;}
+ol { padding-left:20px;}
+
+/*----------Common Table css Start------------*/
+.table-price-wrap{width: 100%; overflow-x: auto;}
+.table-price-wrap table{border: 1px solid #E6E6E6; text-transform: capitalize;}
+.table-price-wrap table tr th{padding:5px; }
+.table-price-wrap table tr td, 
+.table-price-wrap table tr th{padding:5px; border: 1px solid #E6E6E6; }
+table tr:first-child{ background:#ff9836 !important; color:#fff !important; }
+table td{ padding: 10px !important; border: 1px solid #ff9836 !important;}
+table tr:first-child th{ border-left: 1px solid #E6E6E6 !important; padding: 10px !important;}
+table tr:first-child td{ border-left: 1px solid #E6E6E6 !important; padding: 10px !important;}
+table tr:first-child th:first-child{ border-left: 1px solid #ff9836 !important;}
+table tr:first-child td:first-child{ border-left: 1px solid #ff9836 !important;}
+table tr:first-child th:last-child{ border-right: 1px solid #ff9836 !important;}
+table tr:first-child td:last-child{ border-right: 1px solid #ff9836 !important;}
+.academicCommonTab .tableForAcademics table.docTbl{ border-right: 1px solid #ff9836; border-bottom:1px solid #ff9836;}
+/*----------Common Table css End------------*/
+

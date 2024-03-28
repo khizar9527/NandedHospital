@@ -1,0 +1,114 @@
+.calBox {
+  background-color: #fff;
+  padding: 2px;
+  text-align: center;
+  color: #024594;
+  position: relative;
+}
+.calBox:before{
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  content: "";
+  background: rgba(2,69,139, .05);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.calElement {
+  margin: 1px;
+  display: inline-block;
+  overflow:hidden;
+}
+.calDay{
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+.calDay .calElement {
+  font-size: 12px;
+}
+.calDay .calElement.prev, .calDay .calElement.next{
+  position: absolute;
+  top: 0;
+  border: solid 1px rgba(11,16,63, .20);
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.calDay .calElement.prev {
+  left: 0;
+}
+.calDay .calElement.next
+ {
+  right: 0;
+}
+.calElement.next:after, .calElement.prev:after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-right: solid 1px #000;
+  border-bottom: solid 1px #000;
+  position: absolute;
+  
+}
+.calElement.next:after{
+  top: 15px;
+  left: 12px;
+  transform: rotate(-45deg);
+}
+.calElement.prev:after{
+  top: 15px;
+  left: 18px;
+  transform: rotate(135deg);
+}
+
+span.calElement.next:hover, span.calElement.prev:hover {
+  
+  cursor: pointer;
+}
+
+.calDay .calElement .dayNumber {
+  font-size: 1rem;
+}
+
+.calElement .day_num_name{
+  max-width: 55px;
+  margin: 0 auto;
+  min-height: 70px;
+  padding-top: 14px;
+  font-size: 1rem;
+  font-family: 'Roboto-Medium', sans-sarif;
+}
+.calElement .day_num_name span{
+  font-family: 'Roboto', sans-serif;
+}
+.calElement.selected .day_num_name{
+  background: rgb(246,140,66);
+background: linear-gradient(0deg, rgba(246,140,66,1) 0%, rgba(246,140,66,1) 40%, rgba(253,173,117,1) 100%);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.calElement .day_num_name:hover {
+  background: rgb(246,140,66);
+background: linear-gradient(0deg, rgba(246,140,66,1) 0%, rgba(246,140,66,1) 40%, rgba(253,173,117,1) 100%);
+color: #fff;
+   cursor: pointer;
+}
+.calYear, .calMonth {
+  font-size: 1rem;
+  font-family: 'Roboto-Bold', sans-sarif;
+  display: inline-block;
+  padding: 8px 2px;
+  position: relative;
+}
+.calMonth .calElement, .calYear .calElement, .calMonth .calElement:hover, .calYear .calElement:hover{
+  background: none!important;
+  color: #024594;
+  width: auto!important;
+}

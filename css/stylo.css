@@ -1,0 +1,556 @@
+
+.btn btn-outline-primary{
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.collapse:not(.show) {
+    display: none;
+}
+.row{
+    background-image: url(images/hero_content_bg_plus.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.banner_section.gradient_bg {
+    background: #e5f3ff;
+    background: linear-gradient(-235deg, #e5f3ff 0%, #fafdff 40%, white 70%, #e5f3ff 100%);
+    padding-top: 100px;
+}
+h1, h2, h3 {
+    color: #024594;
+}
+.h2, h2 {
+    font-size: 2rem;
+}
+.nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+ul {
+    list-style: none;
+}
+
+.btn btn-outline-primary{
+    text-transform: uppercase;
+    color: #024594;
+    border: solid 1px #024594;
+    padding: 11px 24px;
+    border-radius: 26px;
+    letter-spacing: 1px;
+    min-width: 180px;
+    background: transparent;
+}
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+li {
+    text-align: -webkit-match-parent;
+}
+
+ a {
+        color: #007bff;
+        text-decoration: none;
+        background-color:transparent
+    }
+    .calElement.selected .day_num_name {
+        background: rgb(246, 140, 66);
+        background: linear-gradient(0deg, rgba(246, 140, 66, 1) 0%, rgba(246, 140, 66, 1) 40%, rgba(253, 173, 117, 1) 100%);
+        border: none;
+        border-radius: 8px;
+        color: #fff;
+    }
+    .calElement .day_num_name {
+        max-width: 55px;
+        margin: 0 auto;
+        min-height: 70px;
+        padding-top: 14px;
+        font-size: 1rem;
+        font-family: 'Roboto-Medium', sans-sarif;
+    }
+    .calBox {
+        background-color: #fff;
+        padding: 2px;
+        text-align: center;
+        color: #024594;
+        position: relative;
+    }
+    .card {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0, 0, 0, .125);
+        border-radius: .25rem;
+    }
+
+    .calElement {
+        margin: 1px;
+        display: inline-block;
+        overflow: hidden;
+    }
+    .row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    .common_accordion .card .card-header {
+        padding: 0;
+        border: none;
+        background-color: transparent;
+    }
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+   
+    .gallery-tabs .nav-link.active {
+        color: #024594;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    }
+    .mt-3, .my-3 {
+        margin-top: 1rem !important;
+    }
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+    .tab-content > .active {
+        display: block;
+    }
+    .card-header:first-child {
+        border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+        margin-bottom: .5rem;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+    .booking_list .list_box .note {
+        font-size: .75rem;
+        color: #0D1355;
+        opacity: 80%;
+    }
+    li {
+        display: list-item;
+        text-align: -webkit-match-parent;
+    }
+    .calDay .calElement.prev, .calDay .calElement.next {
+        position: absolute;
+        top: 0;
+        border: solid 1px rgba(11, 16, 63, .20);
+        width: 48px;
+        height: 48px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    .calElement.next:after {
+        top: 15px;
+        left: 12px;
+        transform: rotate(-45deg);
+    }
+    .bookSlots_section .bookSlots_bg {
+        display: flex;
+    }
+    .booking_list {
+        border-top: dashed 1px rgba(13, 19, 85, 0.3);
+        padding-top: 20px;
+    }
+   
+    .common_accordion .card-body ul li a {
+        text-decoration: none;
+        color: #F68C42;
+    }
+    .tab-content:not(.hp_gallery .tab-content) ul li, .common_accordion .card-body ul li {
+        position: relative;
+        padding-left: 20px;
+        padding-bottom: 10px;
+        color: #262e30;
+    }
+    .booking_list .list_box ul li a.disabled {
+        background: #A8A8A8;
+        /* border-color: #A8A8A8; */
+        /* color: #676767; */
+    }
+    .booking_list .list_box ul li a {
+        display: inline-block;
+        padding: 10px 15px;
+        border-radius: 20px;
+        border: solid 1px rgba(11, 16, 63, 0.15);
+        font-size: .75rem;
+        min-width: 150px;
+        text-align: center;
+        text-decoration: none;
+    }
+    .bookSlots_section .bookSlots_bg span.orange_bg:before {
+        background-color: #f68c42;
+    }
+    .bookSlots_section .bookSlots_bg span:before {
+        position: absolute;
+        left: 0px;
+        top: 4px;
+        width: 6px;
+        height: 6px;
+        border-radius: 100%;
+        content: '';
+    }
+    .booking_list .list_box ul {
+        padding: 0;
+        margin: 0 0 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .common_accordion .card .card-header h5 a {
+        display: block;
+        padding: 20px 30px 0px 30px;
+        color: #024594;
+        text-decoration: none;
+        font-family: "Roboto-Medium", sans-sarif;
+        border: solid 1px #f68c42;
+        border-radius: 8px 8px 0 0;
+        border-bottom: none;
+        position: relative;
+        transition: all .3s;
+        background-color: #fff;
+    }
+    .common_accordion .card .card-header h5 a.collapsed {
+        font-family: "Roboto", sans-serif;
+        border: solid 1px #d3d5e0;
+        border-radius: 8px;
+        background-color: transparent;
+        padding-bottom: 20px;
+    }
+
+    .common_accordion .card .card-header h5 a.collapsed:after {
+        top: 20px;
+    }
+    .common_accordion .card .card-header h5 a.collapsed:after {
+        transform: rotate(45deg);
+        top: 15px;
+    }
+    a {
+        outline: none;
+        color: #0B103F;
+    }
+    .common_accordion .card .card-header h5 a.collapsed {
+        font-family: "Roboto", sans-serif;
+        border: solid 1px #d3d5e0;
+        border-radius: 8px;
+        background-color: transparent;
+        padding-bottom: 20px;
+    }
+    .common_accordion .card .card-header h5 a:after {
+        position: absolute;
+        right: 20px;
+        top: 25px;
+        width: 20px;
+        height: 20px;
+        content: "";
+        border-bottom: solid 2px #0B103F;
+        border-right: solid 2px #0B103F;
+        transform: rotate(-135deg);
+        transition: all .3s;
+    }
+    
+    .common_accordion .card .card-header h5 a:after {
+        width: 12px;
+        height: 12px;
+    }
+    .common_accordion .card .card-header h5 a {
+        display: block;
+        padding: 20px 30px 0px 30px;
+        color: #024594;
+        text-decoration: none;
+        font-family: "Roboto-Medium", sans-sarif;
+        border: solid 1px #f68c42;
+        border-radius: 8px 8px 0 0;
+        border-bottom: none;
+        position: relative;
+        transition: all .3s;
+        background-color: #fff;
+    }
+   
+    .calElement.next:after, .calElement.prev:after {
+        content: "";
+        width: 16px;
+        height: 16px;
+        border-right: solid 1px #000;
+        border-bottom: solid 1px #000;
+        position: absolute;
+    }
+    .calElement.next:after {
+        top: 15px;
+        left: 12px;
+        transform: rotate(-45deg);
+    }
+    
+    .calElement.prev:after {
+        top: 15px;
+        left: 18px;
+        transform: rotate(135deg);
+    }
+    .calBox:before {
+        width: 100%;
+        height: 48px;
+        border-radius: 8px;
+        content: "";
+        background: rgb(11 117 227 / 5%);
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+    }
+    *, ::after, ::before {
+        box-sizing: border-box;
+    }
+    .w-100 {
+        width: 100% !important;
+    }
+    .calYear, .calMonth {
+        font-size: 1rem;
+        font-family: 'Roboto-Bold', sans-sarif;
+        display: inline-block;
+        padding: 8px 2px;
+        position: relative;
+    }
+    .calMonth .calElement, .calYear .calElement, .calMonth .calElement:hover, .calYear .calElement:hover {
+        background: none !important;
+        color: #024594;
+        width: auto !important;
+    }
+    .calElement.selected .day_num_name {
+        background: rgb(246, 140, 66);
+        background: linear-gradient(0deg, rgba(246, 140, 66, 1) 0%, rgba(246, 140, 66, 1) 40%, rgba(253, 173, 117, 1) 100%);
+        border: none;
+        border-radius: 8px;
+        color: #fff;
+    }
+    .bookSlots_section .bookSlots_bg span:first-child, .bookSlots_section .bookSlots_bg p:first-child {
+        margin-left: 0px;
+    }
+    .bookSlots_section .bookSlots_bg span, .bookSlots_section .bookSlots_bg p {
+        position: relative;
+        padding-left: 12px;
+        font-size: 0.8rem;
+        line-height: 14px;
+        margin-left: 15px;
+    }
+    .bookSlots_section .bookSlots_bg span:before {
+        position: absolute;
+        left: 0px;
+        top: 4px;
+        width: 6px;
+        height: 6px;
+        border-radius: 100%;
+        content: '';
+    }
+    .bookSlots_section .bookSlots_bg span.gray_bg:before {
+        background-color: #A8A8A8;
+    }
+    .booking_list .list_box .note {
+        font-size: .75rem;
+        color: #0D1355;
+        opacity: 80%;
+    }
+ .tab-content:not(.hp_gallery .tab-content) ul li, .common_accordion .card-body ul li {
+        position: relative;
+        padding-left: 20px;
+        padding-bottom: 10px;
+        color: #262e30;
+    }
+    .bookSlots_section {
+        padding-bottom: 20px;
+    }
+    .text-center {
+        text-align: center !important;
+    }
+    .common_accordion .card .collapse.show .card-body {
+        border-color: #f68c42;
+    }
+    .common_accordion .card .card-body {
+        padding: 20px 30px;
+        border: solid 1px #d3d5e0;
+        border-top: none;
+        border-radius: 0 0 8px 8px;
+        background-color: #fff;
+    }
+    
+    .col-md-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .common_accordion .card {
+        margin-bottom: 17px;
+        border: none;
+        background-color: transparent;
+    }
+    .inner_three_cards.dr-listing-boxes .card {
+        padding: 28px 12px 35px 12px;
+    }
+    .inner_three_cards .card {
+        padding: 28px 12px 5px 12px;
+        flex-direction: row;
+        -ms-flex-direction: row;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        border: 0px;
+        margin-bottom: 30px;
+        height: 100%;
+    }
+    .consultants_cards.inner_three_cards.dr-listing-boxes .card_link {
+        position: relative;
+        bottom: 0px;
+    }
+    .common_card {
+        padding: 16px;
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+    }
+    .quality_healthcare .common_card {
+        background-image: url(images/hero_content_bg_plus.png);
+        background-position: 5px 0px;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+    }
+    .quality_healthcare .common_card ul {
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+    .d-flex {
+        display: -ms-flexbox !important;
+        display: flex !important;
+    }
+    .quality_healthcare .common_card h3 {
+        font-size: 1.25rem;
+        color: #0B103F;
+        margin-bottom: 30px;
+    }
+    .bg-white {
+        background-color: #fff !important;
+    }
+    @media (max-width: 992px){}
+.common_accordion .card .card-body {
+    padding: 15px;
+}
+div {
+    display: block;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .carousel-inner .carousel-item.active,
+  .carousel-inner .carousel-item.next,
+  .carousel-inner .carousel-item.prev {
+    display: flex;
+  }
+  
+  @media(min-width:768px){
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item.next{
+      transform: translateX(25%);
+    }
+  }
+  
+  .carousel-inner .carousel-item-end,
+  .carousel-inner .carousel-item-start{
+    transform: translateX(0);
+  }
+  
+  @media(max-width:767px){
+    .carousel-inner .carousel-item>div {
+      display: none;
+    }
+    .carousel-inner .carousel-item>div:first-child {
+      display: block;
+  
+    }
+  }
+  
+  .carousel {
+    width:100%;
+  }
+  .dropdown:hover .dropdown-menu{
+    display:block;
+}
+
+.custom{
+  padding: 6px 10px;
+  font-size :1rem; 
+  color:#024594 ;
+}
+
+@media (max-width: 767px){
+  .hidden-mobile{
+    display:none;
+  }
+}
+.home-patient-care-b px-5 bg-light{
+    margin: 10px 10px;
+}

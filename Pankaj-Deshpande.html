@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="stylo.css" />
+    <!-- <link rel="stylesheet" href="common.css" /> -->
+    <link rel="stylesheet" href="doctor-profile.css" />
+    <link rel="stylesheet" href="jquery.calendarPicker.css" />
+    <link rel="stylesheet" href="bootstrap.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- navigation bar  all-->
+    <header class="hidden-mobile">
+      <div class="px-0 py-0 bg-light text-black">
+        <div class="container">    
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-dark text-decoration-none">
+              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+            </a>
+            <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+              <li>             
+                <a href="#" class="nav-link text-black">
+                  <svg  class="bi d-block mx-auto mb-1" width="20" height="24"><use xlink:href="#home"/></svg>
+                  <img src="images/accessibility.png" alt="" width="25" height="25">
+                  Accessibility
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link text-black">
+                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"/></svg>
+                  <img src="images/book.png" alt="" width="24" height="24">
+                  Book An Appointment
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link text-black">
+                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"/></svg>
+                  <img src="images/service.png" alt="" width="24" height="24">
+                  Online Services
+                </a>
+              </li>
+              <li>
+                <a href="login1.html" class="nav-link text-black">
+                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid" /></svg>
+                <img src="images/login.png" alt="" width="24" height="24">
+                  Login
+                </a>
+              </li>
+              <li>
+                <a href="https://maps.app.goo.gl/xPkrV1Ujk73NUda5A" class="nav-link text-black">
+                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"/></svg>
+                <img src="images/location.png" alt="" width="24" height="24">
+                  Nanded Hospital
+               
+                </a>
+              </li>            
+         </ul>          
+          </div>         
+       </div>       
+      </div>   
+    </header>
+
+  <nav class="navbar bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/nanded.png" alt="Bootstrap" width="170" height="50">
+          <div class="col-lg-6 col-md-7 col-12">
+          <ul class="top-contact hidden-mobile">
+            <i class="fa fa-phone"></i><a href="555555555555">Appointment:555555555555 </a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            <i class="fa fa-envelope"></i><a href="55665656565">Emergency:55665656565</a>
+          </ul>
+       
+        </a>
+      </div>
+      </div>
+    </nav>
+    <div class="home-patient-care-b p-2 bg-white px-5">
+      <a href="index.html">Home ></a>
+      <a href="Patient_care.html">Patient Care ></a>
+      <a href="Book_an_Appoinment.html">Book An Appointment ></a>
+      <a href="Pankaj-Deshpande.html">Dr Pankaj Deshpande></a>
+    </div>
+    <section class="banner_section gradient_bg">
+      <div class="container">
+        <h2>Nephrology</h2>
+        <div class="row">
+          <div class="col-lg-7 col-md-6 col-6">
+            <div class="banner_content">
+              <div class="title">
+                <h1>Dr. Pankaj Deshpande</h1>
+                <h4>
+                    Consultant Paediatric Nephrologist
+                <h6>
+                    MRCP (UK), MD (Paed), FCPS (Child health), DCH
+                </h6>
+              </div>
+              <div class="description">
+                <h5>
+                  <img
+                    src="images/icon_area_of_expertise (1).svg"
+                    alt=""
+                  />Areas of Expertise
+                </h5>
+                <p>
+                    Kidney disorders in children
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-6 col-6">
+            <picture class="hero_image text-center">
+              <img
+                class="lazyloaded"
+                src="images/pankaj-deshpande.png"
+                alt="Pankaj Despande"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <ul class="nav nav-pills mb-3 px-5" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link active"
+          id="pills-home-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#pills-home"
+          type="button"
+          role="tab"
+          aria-controls="pills-home"
+          aria-selected="true"
+        >
+          <h5>Consultaion at Hospital</h5>
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="pills-profile-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#pills-profile"
+          type="button"
+          role="tab"
+          aria-controls="pills-profile"
+          aria-selected="false"
+        >
+          <b> <h5>Tel Consultaion</h5></b>
+        </button>
+      </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div
+        class="tab-pane fade show active"
+        id="pills-home"
+        role="tabpanel"
+        aria-labelledby="pills-home-tab"
+        tabindex="0"
+      >
+        <section>
+          <div class="tab-content mt-3">
+            <div
+              class="tab-pane active"
+              id="consultationTab"
+              role="tabpanel"
+              aria-labelledby="consultation"
+            >
+              <div class="row">
+                <div class="col-lg-8 col-md-12">
+                  <div class="accordion_container">
+                    <div
+                      id="accordion"
+                      role="tablist"
+                      class="common_accordion custom-accordion"
+                    >
+                      <div class="card">
+                        <div class="card-header" role="tab" id="headingOne">
+                          <h5 class="mb-0">
+                            <a
+                              data-toggle="collapse"
+                              href="#weeklyTimings"
+                              aria-expanded="true"
+                              aria-controls="weeklyTimings"
+                              data-bs-toggle="collapse"
+                              >Doctor’s Weekly Timings
+                              <span>Room No 1404</span></a
+                            >
+                          </h5>
+                        </div>
+                        <div
+                          id="weeklyTimings"
+                          class="collapse show"
+                          role="tabpanel"
+                          aria-labelledby="headingOne"
+                          data-parent="#accordion"
+                          style
+                        >
+                          <div class="card-body">
+                            <div class="calander_wrap">
+                              <div class="w-100 calBox">
+                                <div class="calMonth">
+                                  <span class="calElement today selected"
+                                    >Apr</span
+                                  >
+                                  <div class="weekdate"></div>
+                                </div>
+                                <div class="calYear">
+                                  <span class="calElement today selected"
+                                    >2024</span
+                                  >
+                                </div>
+                                <div class="calDay">
+                                  <div class="calElement prev"></div>
+                                  <div
+                                    class="calElement today selected"
+                                    style="width: 87px"
+                                  >
+                                    <div class="day_num_name">
+                                      <span class="dayNumber">Fri</span><br />5
+                                    </div>
+                                  </div>
+                                  <div class="calElement" style="width: 87px">
+                                    <div class="day_num_name">
+                                      <span class="dayNumber">Mon</span><br />8
+                                    </div>
+                                  </div>
+                                  <div class="calElement" style="width: 87px">
+                                    <div class="day_num_name">
+                                      <span class="dayNumber">Tue</span><br />9
+                                    </div>
+                                  </div>
+                                  <div class="calElement" style="width: 87px">
+                                    <div class="day_num_name">
+                                      <span class="dayNumber">Wed</span><br />10
+                                    </div>
+                                  </div>
+                                  <div class="calElement" style="width: 87px">
+                                    <div class="day_num_name">
+                                      <span class="dayNumber">Thu</span><br />11
+                                    </div>
+                                  </div>
+                                  <div class="calElement" style="width: 87px">
+                                    <div class="day_num_name">
+                                      <span class="dayNumber">Fri</span><br />12
+                                    </div>
+                                  </div>
+                                  <div class="calElement" style="width: 87px">
+                                    <div class="day_num_name">
+                                      <span class="dayNumber">Mon</span><br />15
+                                    </div>
+                                  </div>
+                                  <div class="calElement next"></div>
+                                </div>
+                              </div>
+                              <br />
+                              <div class="booking_slot">
+                                <div class="booking_list">
+                                  <div class="list_box">
+                                    <h3>
+                                      <span>Consultation at hospital</span>
+                                      <p class="note mb-0">
+                                        (fees : CONSULTATION - ₹2200,
+                                        CONSULTATION REPEAT - ₹1500. )
+                                      </p>
+                                    </h3>
+                                    <div class="bookSlots_section">
+                                      <div class="bookSlots_bg">
+                                        <span class="orange_bg"
+                                          >Available Slots</span
+                                        ><span class="gray_bg"
+                                          >Slots Already Booked</span
+                                        >
+                                      </div>
+                                    </div>
+                                    <ul>
+                                      <li>
+                                        <a
+                                          class="disabled"
+                                          href="javascript:void(0)"
+                                          title="No Slots Available"
+                                          >10:30 AM - 10:45 AM</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="disabled"
+                                          href="javascript:void(0)"
+                                          title="No Slots Available"
+                                          >10:45 AM - 11:00 AM</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="disabled"
+                                          href="javascript:void(0)"
+                                          title="No Slots Available"
+                                          >11:00 AM - 11:15 AM</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="disabled"
+                                          href="javascript:void(0)"
+                                          title="No Slots Available"
+                                          >11:15 AM - 11:30 AM</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="disabled"
+                                          href="javascript:void(0)"
+                                          title="No Slots Available"
+                                          >11:30 AM - 11:45 AM</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="disabled"
+                                          href="javascript:void(0)"
+                                          title="No Slots Available"
+                                          >11:45 AM - 12:00 PM</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="disabled"
+                                          href="javascript:void(0)"
+                                          title="No Slots Available"
+                                          >12:00 PM - 12:15 PM</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="available"
+                                          href="javascript:void(0)"
+                                          >12:15 PM - 12:30 PM</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="disabled"
+                                          href="javascript:void(0)"
+                                          title="No Slots Available"
+                                          >12:30 PM - 12:45 PM</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          class="disabled"
+                                          href="javascript:void(0)"
+                                          title="No Slots Available"
+                                          >12:45 PM - 1:00 PM</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="btn_wrap text-center">
+                                  <a
+                                    href="javascript:void(0)"
+                                    class="btn btn-outline-primary"
+                                    >Book Slot</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" role="tab" id="heading5">
+                          <h5 class="mb-0">
+                            <a
+                              class="collapsed"
+                              data-toggle="collapse"
+                              href="#ProfessionalAffiliations"
+                              aria-expanded="false"
+                              aria-controls="ProfessionalAffiliations"
+                              data-bs-toggle="collapse"
+                              >Professional Experience and Training</a
+                            >
+                          </h5>
+                        </div>
+                        <div
+                          id="ProfessionalAffiliations"
+                          class="collapse"
+                          role="tabpanel"
+                          aria-labelledby="heading5"
+                          data-parent="#accordion"
+                          style
+                        >
+                          <div class="card-body">
+                            <ul>
+                              <li>After completing MD (Pediatrics) from Bai Jerbai Wadia hospital in 1995, Dr. Deshpande was in UK for 10 years and specialised in Pediatric Nephrology.</li>
+                              <li>After working at institutions like Birmingham Children’s Hospital and Guy’s Hospital in London, he was a Consultant Pediatric Nephrologist at Southampton General Hospital from 2001-2005 before returning and settling in mUMBAI in 2005. He has a vast experience in Pediatric Nephrology, including Pediatric Dialysis and Transplantation. He has numerous publications in journals like Pediatric Nephrology, Archives etc and has presented at various forums including ESPN (European Society of Pediatric Nephrology).</li>
+                             
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Dr cards -->
+                 <div class="col-lg-4 col-md-12">
+                  <div
+                    class="consultants_cards inner_three_cards dr-listing-boxes p-0"
+                  >
+                    <h2>Consultants</h2>
+                    <div class="card">
+                      <div class="card_image">
+                        <span class="imageCircle"
+                          ><img
+                            src="https://hinduja-prod-assets.s3.ap-south-1.amazonaws.com/s3fs-public/styles/thumbnail/public/2021-11/ayan-kumar-dey.png?VersionId=Td.CdjsI875_dvvZgNHsxU_Ud80BSu9C&amp;itok=cCBXm9Lc"
+                            alt="Dr. Ayan Dey"
+                            class="ls-is-cached lazyloaded"
+                        /></span>
+                      </div>
+                      <div class="card-body">
+                        <div class="top_title">
+                          <h3>Dr. Ayan Dey</h3>
+                          <span class="sub_title mb-1"
+                            ><strong
+                              >Consultant - Nephrologist and Transplant
+                              Physician</strong
+                            ></span
+                          ><span class="sub_title"
+                            >Fellowship in Adult Nephrology &amp;
+                            Transplantation (Toronto), DNB Nephrology (Gold
+                            medal), DNB Internal Medicine, FCCCM (Gold
+                            medal)</span
+                          >
+                          <p></p>
+                        </div>
+
+
+                        <div class="card_link">
+                          <a
+                            class="btn btn-outline-primary"
+                            href="aayan-dey.html"
+                            >Book Appointment</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card_image">
+                        <span class="imageCircle"
+                          ><img
+                            src="images/alan-almeida.png"
+                            alt="Dr. Alan Almeida"
+                            class="ls-is-cached lazyloaded"
+                        /></span>
+                      </div>
+                      <div class="card-body">
+                        <div class="top_title">
+                          <h3>Dr. Alan Almeida</h3>
+                          <span class="sub_title mb-1"
+                            ><strong>Section Head - Nephrology, Consultant - Nephrologist and Transplant Physician</strong></span
+                          >
+                          <p>MBBS, MD (Internal Medicine), MNAMS (Nephrology), Post – Doctoral Fellow of the University of Missouri, Columbia (USA) Fellow, Indian Society of Nephrology</p>
+                        </div>
+                        <div class="card_link">
+                          <a
+                            class="btn btn-outline-primary"
+                            href="alan-almedia.html"
+                            >Book Appointment</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card_image">
+                        <span class="imageCircle"
+                          ><img
+                            src="images/Mahesh Prasad_0.png"
+                            alt="Dr. K Mahesh Prasad "
+                            class="ls-is-cached lazyloaded"
+                        /></span>
+                      </div>
+                      <div class="card-body">
+                        <div class="top_title">
+                          <h3>Dr. K Mahesh Prasad </h3>
+                          <span class="sub_title mb-1"
+                            ><strong
+                              >Consultant Nephrologist</strong
+                            ></span
+                          ><span class="sub_title"
+                            >MBBS, MD (MEDICINE), DNB (NEPHROLOGY)</span
+                          >
+                        </div>
+                        <div class="card_link">
+                          <a
+                            class="btn btn-outline-primary"
+                            href="K-Mahesh-Prasad.html"
+                            >Book Appointment</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="btn_wrap">
+                      <a
+                        href="javascript:void(0)"
+                        class="btn btn-outline-primary px-5" style="border-radius: 34px;"
+                        >View all</a
+                      >
+                    </div>
+                    <div class="quality_healthcare">
+                      <div class="common_card bg-white">
+                        <h3>Quality Healthcare</h3>
+                        <ul class="d-flex" role="listbox">
+                          <li role="listitem">
+                            <img
+                              src="images/quality_healthcare_03.png"
+                              alt=""
+                            />
+                          </li>
+                          <li role="listitem">
+                            <img
+                              src="images/quality_healthcare_02.png"
+                              alt=""
+                            />
+                          </li>
+                          <li role="listitem">
+                            <img src="images/nabl.png" alt="NABL Logo" />
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div
+        class="tab-pane fade"
+        id="pills-profile"
+        role="tabpanel"
+        aria-labelledby="pills-profile-tab"
+        tabindex="0"
+      >
+        <section>
+          <div class="row">
+            <div class="col-lg-8 col-md-12">
+              <div class="accordion_container">
+                <div
+                  id="accordion2"
+                  role="tablist"
+                  class="common_accordion custom-accordion"
+                >
+                  <div class="card">
+                    <div class="card-header" role="tab" id="headingOne">
+                      <h5 class="mb-0">
+                        <a
+                        class="collapse"
+                          data-toggle="collapse"
+                          href="#weeklyTimings"
+                          aria-expanded="true"
+                          aria-controls="weeklyTimings"
+                          data-bs-target="collapse"
+                          >Doctor’s Weekly Timings <span>Room No 1404</span></a
+                        >
+                      </h5>
+                    </div>
+                    <div
+                      id="weeklyTimings"
+                      class="collapse show"
+                      role="tabpanel"
+                      aria-labelledby="headingOne"
+                      data-parent="#accordion"
+
+
+                      style
+                    >
+                      <div class="card-body">
+                        <div class="calander_wrap">
+                          <div class="w-100 calBox">
+                            <div class="calMonth">
+                              <span class="calElement today selected">Mar</span>
+                              <div class="weekdate"></div>
+                            </div>
+                            <div class="calYear">
+                              <span class="calElement today selected"
+                                >2024</span
+                              >
+                            </div>
+                            <div class="calDay">
+                              <div class="calElement prev"></div>
+                              <div
+                                class="calElement today selected"
+                                style="width: 87px"
+                              >
+                                <div class="day_num_name">
+                                  <span class="dayNumber">Tue</span><br />26
+                                </div>
+                              </div>
+                              <div class="calElement" style="width: 87px">
+                                <div class="day_num_name">
+                                  <span class="dayNumber">Sat</span><br />30
+                                </div>
+                              </div>
+                              <div class="calElement" style="width: 87px">
+                                <div class="day_num_name">
+                                  <span class="dayNumber">Tue</span><br />2
+                                </div>
+                              </div>
+                              <div class="calElement" style="width: 87px">
+                                <div class="day_num_name">
+                                  <span class="dayNumber">Sat</span><br />6
+                                </div>
+                              </div>
+                              <div class="calElement" style="width: 87px">
+                                <div class="day_num_name">
+                                  <span class="dayNumber">Tue</span><br />9
+                                </div>
+                              </div>
+                              <div class="calElement" style="width: 87px">
+                                <div class="day_num_name">
+                                  <span class="dayNumber">Sat</span><br />13
+                                </div>
+                              </div>
+                              <div class="calElement" style="width: 87px">
+                                <div class="day_num_name">
+                                  <span class="dayNumber">Tue</span><br />16
+                                </div>
+                              </div>
+                              <div class="calElement next"></div>
+                            </div>
+                          </div>
+                          <br />
+                          <div class="booking_slot">
+                            <div class="booking_list">
+                              <div class="list_box">
+                                <h3 class="mb-0">
+                                  <span>Teleconsultation</span>
+                                </h3>
+                                <ul>
+                                  <li>
+                                    <a
+                                      class="available"
+                                      href="javascript:void(0)"
+                                      >9:00 AM</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      class="available"
+                                      href="javascript:void(0)"
+                                      >9:20 AM</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      class="available"
+                                      href="javascript:void(0)"
+                                      >9:40 AM</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      class="disabled"
+                                      href="javascript:void(0)"
+                                      title="No Slots Available"
+                                      >10:00 AM</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      class="available"
+                                      href="javascript:void(0)"
+                                      >10:20 AM</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="btn_wrap text-center">
+                              <a
+                                href="javascript:void(0)"
+                                class="btn btn-outline-primary"
+                                >Book Slot</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="b-example-divider" style="background-color: #F9FBFF;">
+
+
+      <div class="container">
+        <footer class="py-5" >
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3" style="margin-left: 15%;">
+              <ul class="nav flex-column">
+                <b><li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">For Patients</a></li></b>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Centers of Excellence</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">- Center for Cancer Care</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">- Center for Cardiac Care</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">- Center for Neuro Care</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">- Center for Orthopedic Care</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Specialties & Services</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Specialty Clinics</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Care@Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Short Stay Service</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">HealthFirst - Preventive Health checkup</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Health Blog</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Teleconsultation</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Online services</a></li><br><br>
+                <b><li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Research & Academicsn</a></li></b>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Academics</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Research</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3" style="margin-left: 15%;">
+              <ul class="nav flex-column">
+               <b> <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">For Doctors</a></li></b><br>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Search by Last Name</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Search by Specialities</a></li><br>
+               <b> <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Awards</a></li></b><br>
+               <b> <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Accreditations</a></li></b>
+               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img src="images/nabh.png" height="40px" weidth="80px">  NABH </a></li>
+               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img src="images/nabl.png" height="40px" weidth="80px">  NABL </a></li>
+               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img src="images/cap.png" height="40px" weidth="80px">  CAP </a></li>
+               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img src="images/iso.png" height="40px" weidth="80px">  ISO </a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3" style="margin-left: 15%;">
+              <b><ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">contact us</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Enquiry</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Careers</a></li><br><br>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Locate Us</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">News and Media</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Events and Conferences</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Testimonials</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Stent Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Knee Implant Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">BMI Calculator</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">E Brochure</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Administration Policies</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy Policy</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sitemap</a></li><br><br>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" style="margin-left:-5%;">Follow Nanded Hospital on</a></li>
+                <div class="row">
+                  <div class="col-md-3" >
+                <a href="https://in.linkedin.com"><img src="images/linkedin.png" height="40" width="auto" alt=""></a></div>
+                <div class="col-md-3" >
+                <a href="https://in.linkedin.com"><img src="images/instagram.jpg" height="40" width="auto" alt=""></a></div>
+                <div class="col-md-3" >
+                <a href="https://in.linkedin.com" ><img src="images/teitter.png" height="40" width="auto" alt=""></a></div></div>
+                
+              </ul></b>
+          
+            </div>
+          </div>
+        </footer>
+      </div>
+      </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="doc.js"></script>
+    <script src="calendarPicker.js"></script>
+  </body>
+</html>

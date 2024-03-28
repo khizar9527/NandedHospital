@@ -1,0 +1,222 @@
+/* line 3, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/doctor-profile.scss */
+.consultants_cards {
+  background-image: url(../images/BG_Plus_Signs.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* line 11, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/doctor-profile.scss */
+.consultants_cards h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+/* line 16, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/doctor-profile.scss */
+.quality_healthcare {
+  margin-top: 45px;
+}
+
+/* line 18, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/doctor-profile.scss */
+.quality_healthcare .common_card {
+  background-image: url(../images/quality_healthcare_bg.png);
+  background-position: 5px 0px;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
+/* line 23, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/doctor-profile.scss */
+.quality_healthcare .common_card h3 {
+  font-size: 1.25rem;
+  color: #0B103F;
+  margin-bottom: 30px;
+}
+
+/* line 28, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/doctor-profile.scss */
+.quality_healthcare .common_card ul {
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+/* line 32, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/doctor-profile.scss */
+.quality_healthcare .common_card ul li {
+  margin-right: 20px;
+}
+
+/* line 34, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/doctor-profile.scss */
+.quality_healthcare .common_card ul li:last-child {
+  margin: 0;
+}
+
+/* line 42, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/doctor-profile.scss */
+.booking_list {
+  border-top: dashed 1px rgba(13, 19, 85, 0.3);
+  padding-top: 20px;
+}
+
+/* line 45, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/doctor-profile.scss */
+.booking_list .list_box {
+  border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+/* line 48, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/doctor-profile.scss */
+.booking_list .list_box:last-child {
+  margin: 0;
+  border: none;
+}
+
+/* line 52, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/doctor-profile.scss */
+.booking_list .list_box h3 {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+/* line 56, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/doctor-profile.scss */
+.booking_list .list_box ul {
+  padding: 0;
+  margin: 0 0 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 61, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/doctor-profile.scss */
+.booking_list .list_box ul li {
+  margin-right: 15px;
+  margin-bottom: 8px;
+  padding-left: 0;
+}
+
+/* line 65, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/doctor-profile.scss */
+.booking_list .list_box ul li:before {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  /* line 61, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/doctor-profile.scss */
+  .booking_list .list_box ul li {
+    margin-right: 10px;
+  }
+}
+
+/* line 71, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/doctor-profile.scss */
+.booking_list .list_box ul li a {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: solid 1px rgba(11, 16, 63, 0.15);
+  font-size: .75rem;
+  min-width: 150px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* line 80, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/doctor-profile.scss */
+.booking_list .list_box ul li a.disabled {
+  background: #A8A8A8;
+  border-color: #A8A8A8;
+  color: #676767;
+}
+
+/* line 85, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/doctor-profile.scss */
+.booking_list .list_box ul li a.active {
+  background: #f68c42;
+  background: linear-gradient(-90deg, #f68c42 0%, #f68c42 40%, #fdad75 100%);
+  border-color: #f68c42;
+  color: #fff;
+}
+
+/* line 91, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/doctor-profile.scss */
+.booking_list .list_box ul li a.available {
+  background: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 992px) {
+  /* line 71, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/doctor-profile.scss */
+  .booking_list .list_box ul li a {
+    min-width: 120px;
+  }
+}
+
+/* line 100, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/doctor-profile.scss */
+.booking_list .list_box .note {
+  font-size: .75rem;
+  color: #0D1355;
+  opacity: 80%;
+}
+
+/* line 107, /Users/bhakumar6/Desktop/bhagesh-projects/hinduja/html-hinduja/assets/css/scss/doctor-profile.scss */
+.pkg_name {
+  font-family: "Roboto-Medium", sans-sarif;
+  margin-bottom: 20px;
+  color: #044597;
+  font-size: 1.25rem;
+}
+
+/*# sourceMappingURL=../doctor-profile.map */
+.consultants_cards.inner_three_cards.dr-listing-boxes .card_link{ position:relative; bottom:0px; }
+
+
+#weeklyTimings .booking_list .list_box h3 span{ display: block; padding-bottom: 10px;}
+.booking_slot .booking_list .list_box ul li a.disabled{ color: #ffffff;}
+
+/* bookAppointmentModal Pop Up Started */
+.modal.bookAppointmentModal .close{ background-color: #ffffff; border:1px solid #044597; color:#044597; opacity:1; z-index: 2;}
+.modal.bookAppointmentModal .modal-lg{ max-width: 1044px;}
+.modal.bookAppointmentModal .modal-content{ border:0px; background-color: transparent;}
+.modal.bookAppointmentModal .form_wrap{ padding: 10px 0px 0px;}
+.modal.bookAppointmentModal .appointmentWrap{ display: flex; padding-top: 50px;}
+.modal.bookAppointmentModal .appointmentWrap .leftBox{ width:30%; background-color:#044597; padding:35px 39px; border-radius: 20px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; position: relative; z-index: 1; text-align: center; display: flex; align-items: center;}
+.modal.bookAppointmentModal .appointmentWrap .leftBox p{ font-size:1.1rem; color:#ffffff; margin-bottom: 0px; padding-bottom: 30px;}
+.modal.bookAppointmentModal .appointmentWrap .leftBox .boxContent{ display: flex; justify-content: center; flex-wrap: wrap; }
+.modal.bookAppointmentModal .appointmentWrap .leftBox .boxContent p{ width:100%;}
+
+.modal.bookAppointmentModal .appointmentWrap .rightBox{ width:70%; background-color:#ffffff; padding: 35px 39px; border-radius:20px; -webkit-border-radius:20px; -moz-border-radius:20px; -ms-border-radius:20px; -o-border-radius:20px; margin-left:-20px; }
+
+
+
+.modal.bookAppointmentModal .close{ background-color: #ffffff; border:1px solid #044597; color:#044597; opacity:1; z-index: 2;}
+.modal.bookAppointmentModal .modal-lg{ max-width: 1044px;}
+.modal.bookAppointmentModal .modal-content{ border:0px; background-color: transparent;}
+.modal.bookAppointmentModal .form_wrap{ padding: 10px 0px 0px;}
+.modal.bookAppointmentModal .appointmentWrap{ display: flex; padding-top: 50px;}
+.modal.bookAppointmentModal .appointmentWrap .leftBox{ width:30%; background-color:#044597; padding:35px 39px; border-radius: 20px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; position: relative; z-index: 1; text-align: center; display: flex; align-items: center;}
+.modal.bookAppointmentModal .appointmentWrap .leftBox p{ font-size:1.1rem; color:#ffffff; margin-bottom: 0px; padding-bottom: 30px;}
+.modal.bookAppointmentModal .appointmentWrap .leftBox .boxContent{ display: flex; justify-content: center; flex-wrap: wrap; }
+.modal.bookAppointmentModal .appointmentWrap .leftBox .boxContent p{ width:100%;}
+
+.modal.bookAppointmentModal .appointmentWrap .form_wrap .otp_row .apponit_resend_otp{ right: 0px;}
+.modal.bookAppointmentModal .modal-body{ height: 100%; }
+
+@media (max-width: 992px) {
+  .modal.bookAppointmentModal .modal-body{     height: calc(100vh - 200px);}
+  .modal.bookAppointmentModal .close{ right:30px;}
+}  
+
+@media (max-width: 767px) {
+  .modal.bookAppointmentModal .appointmentWrap{ display: block;}
+  .modal.bookAppointmentModal .appointmentWrap .leftBox, .modal.bookAppointmentModal .appointmentWrap .rightBox{ width:100%; margin-left: 0px; border-radius: 20px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; padding: 20px 20px;}
+  .modal.bookAppointmentModal .appointmentWrap .rightBox h3{ font-size: 1.25rem;}
+}
+
+
+/* bookAppointmentModal Pop Up END */
+/* Booking Slots CSS Start */
+
+.bookSlots_section{ padding-bottom: 20px;}
+.bookSlots_section .bookSlots_bg{ display: flex;}
+.bookSlots_section .bookSlots_bg span:first-child, .bookSlots_section .bookSlots_bg p:first-child{ margin-left: 0px;}
+.bookSlots_section .bookSlots_bg span, .bookSlots_section .bookSlots_bg p{ position: relative; padding-left: 12px; font-size: 0.8rem; line-height:14px; margin-left: 15px;}
+.bookSlots_section .bookSlots_bg span:before{ position: absolute; left:0px; top:4px; width:6px; height: 6px; border-radius: 100%; content: '';}
+.bookSlots_section .bookSlots_bg span.gray_bg:before{ background-color: #A8A8A8;}
+.bookSlots_section .bookSlots_bg span.orange_bg:before{ background-color: #f68c42;}
+.bookSlots_section .bookSlots_bg span.orange_bg:before{ background-color: #f68c42;}
+.bookSlots_section .bookSlots_bg p{ padding-left: 0;}
+.bookSlots_section .bookSlots_bg p.greenText span{ margin-left: 0; padding-left: 0; color: green; font-weight: bold;}
+.bookSlots_section .bookSlots_bg span.greenText strong{ color: green;}
+/* Booking Slots CSS End */
