@@ -1,0 +1,14 @@
+.whatsapp{
+      position:fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 9999;
+    }
+ 
+# Put this in <body> 
+
+<div class="whatsapp">
+    <a href="https://wa.me/919923585444">
+      <img src="images/whatsapp.png" width="50" alt="">
+    </a>
+  </div>
